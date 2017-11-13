@@ -1,0 +1,178 @@
+:root {
+  --w: white;
+  --b: black;
+  --opac: .96;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	background: var(--b);
+	overflow-x: hidden;
+	/*min-width: 500px;*/
+}
+
+#topbar {
+	width: 97%;
+	height: 60px;
+	background: var(--w);
+	padding: 0 1.5%;
+	position: fixed;
+	z-index: 2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	opacity: var(--opac);
+}
+
+.tbitem {
+	font-family: 'PT Mono', monospace;
+	font-size: 30px;
+	color: var(--b);
+}
+
+#title {
+	font-weight: 600;
+	font-size: 40px;
+}
+
+#shortname, #shortnum {
+	display: none;
+}
+
+#info {
+	padding: 36px 0 20px;
+	display: flex;
+	justify-content: space-around;
+}
+
+.infoitem {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	color: var(--w);
+	font-weight: 200;
+}
+
+#story {
+	width: 100%;
+	max-width: 800px;
+	padding: 60px 40px 125px;
+	box-sizing: border-box;
+	margin: 0 auto;
+	text-align: left;
+	font-size: 22px;
+	font-family: 'Montserrat', sans-serif;
+	color: var(--w);
+	line-height: 44px;
+}
+
+.nolim {
+	width: 150%;
+}
+
+#special {
+	position: absolute;
+	right: 3%;
+	bottom: -200%;
+}
+
+li {
+	font-weight: 300;
+	list-style-type: none;
+}
+
+#story::selection, b::selection, i::selection, br::selection, li::selection, .nolim::selection, .infoitem::selection/*, .imp::selection*/ {
+	color: var(--b);
+	background-color: var(--w);
+}
+
+.tbitem::selection, #title::selection, .tbitem a::selection {
+	color: var(--w);
+	background-color: var(--b);
+}
+
+b { font-weight: 600; }
+
+.turnoff, .turnon {
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 800px) {
+    #story {
+    	font-size: 18px;
+    	line-height: 36px;
+    }
+
+    .tbitem {
+    	font-size: 28px;
+    }
+
+    #title {
+    	font-size: 36px;
+    }
+
+    .infoitem {
+    	font-size: 14px;
+    }
+
+    .nolim {
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 600px) {
+    #story {
+    	font-size: 18px;
+    	line-height: 36px;
+    }
+
+    .tbitem {
+    	font-size: 24px;
+    	display: none;
+    }
+
+    #title {
+    	font-size: 34px;
+    }
+
+    #title, #shortname, #shortnum {
+		display: inline-block;
+	}
+
+    .infoitem {
+    	font-size: 12px;
+    }
+
+    .nolim {
+		width: auto;
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+    #story {
+    	font-size: 14px;
+    	line-height: 28px;
+    }
+
+    .tbitem {
+    	display: none;
+		font-size: 20px;
+    }
+
+    #title {
+    	font-size: 26px;
+    }
+
+	#title, #shortname, #shortnum {
+		display: inline-block;
+	}
+
+	.infoitem {
+		font-size: 10px;
+	}
+
+	.nolim {
+		width: auto;
+	}
+}
