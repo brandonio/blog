@@ -11,7 +11,6 @@ body, html {
 	padding: 0;
 	background: var(--b);
 	overflow-x: hidden;
-	/*min-width: 500px;*/
 }
 
 #topbar {
@@ -104,7 +103,7 @@ b { font-weight: 800; }
 	cursor: var(--off);
 }
 
-@media only screen and (max-width: 1100px) and (min-width: 1000px) {
+@media only screen and (max-width: 1100px) and (min-width: 900px) {
     #story {
     	font-size: 20px;
     	line-height: 40px;
@@ -127,7 +126,7 @@ b { font-weight: 800; }
 	}
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 650px) {
+@media only screen and (max-width: 900px) and (min-width: 700px) {
     #story {
     	font-size: 18px;
     	line-height: 36px;
@@ -155,8 +154,7 @@ b { font-weight: 800; }
 	}
 }
 
-
-@media only screen and (max-width: 650px) and (min-width: 500px) {
+@media only screen and (max-width: 700px) {
     #story {
     	font-size: 16px;
     	line-height: 32px;
@@ -164,39 +162,13 @@ b { font-weight: 800; }
 
     .tbitem {
     	display: none;
-		font-size: 24px;
-    }
-
-    #title {
-    	font-size: 32px;
-    }
-
-	#title, #shortname, #shortnum {
-		display: inline-block;
-	}
-
-	.infoitem {
-		font-size: 14px;
-	}
-
-	.nolim {
-		width: auto;
-	}
-}
-
-@media only screen and (max-width: 500px) {
-    #story {
-    	font-size: 16px;
-    	line-height: 32px;
-    }
-
-    .tbitem {
-    	display: none;
+		/*font-size: 24px;*/
 		font-size: 20px;
     }
 
     #title {
-    	font-size: 26px;
+    	/*font-size: 32px;*/
+		font-size: 28px;
     }
 
 	#title, #shortname, #shortnum {
