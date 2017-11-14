@@ -2,6 +2,8 @@
   --w: white;
   --b: black;
   --opac: .96;
+  --on: pointer;
+  --off: default;
 }
 
 body, html {
@@ -13,10 +15,10 @@ body, html {
 }
 
 #topbar {
-	width: 97%;
+	width: 96%;
 	height: 60px;
 	background: var(--w);
-	padding: 0 1.5%;
+	padding: 0 2%;
 	position: fixed;
 	z-index: 2;
 	display: flex;
@@ -47,10 +49,10 @@ body, html {
 }
 
 .infoitem {
-	font-size: 16px;
+	font-size: 18px;
 	font-family: 'Montserrat', sans-serif;
 	color: var(--w);
-	font-weight: 200;
+	font-weight: 400;
 }
 
 #story {
@@ -64,6 +66,7 @@ body, html {
 	font-family: 'Montserrat', sans-serif;
 	color: var(--w);
 	line-height: 44px;
+	font-weight: 400;
 }
 
 .nolim {
@@ -77,7 +80,7 @@ body, html {
 }
 
 li {
-	font-weight: 300;
+	font-weight: 400;
 	list-style-type: none;
 }
 
@@ -91,16 +94,20 @@ li {
 	background-color: var(--b);
 }
 
-b { font-weight: 600; }
+b { font-weight: 800; }
 
-.turnoff, .turnon {
-	cursor: pointer;
+.turnon {
+	cursor: var(--on);
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 800px) {
+.turnoff {
+	cursor: var(--off);
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 1000px) {
     #story {
-    	font-size: 18px;
-    	line-height: 36px;
+    	font-size: 20px;
+    	line-height: 40px;
     }
 
     .tbitem {
@@ -112,7 +119,7 @@ b { font-weight: 600; }
     }
 
     .infoitem {
-    	font-size: 14px;
+    	font-size: 16px;
     }
 
     .nolim {
@@ -120,19 +127,19 @@ b { font-weight: 600; }
 	}
 }
 
-@media only screen and (max-width: 800px) and (min-width: 600px) {
+@media only screen and (max-width: 1000px) and (min-width: 650px) {
     #story {
     	font-size: 18px;
     	line-height: 36px;
     }
 
     .tbitem {
-    	font-size: 24px;
+    	font-size: 26px;
     	display: none;
     }
 
     #title {
-    	font-size: 34px;
+    	font-size: 36px;
     }
 
     #title, #shortname, #shortnum {
@@ -140,7 +147,7 @@ b { font-weight: 600; }
 	}
 
     .infoitem {
-    	font-size: 12px;
+    	font-size: 14px;
     }
 
     .nolim {
@@ -149,10 +156,38 @@ b { font-weight: 600; }
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) and (min-width: 500px) {
     #story {
-    	font-size: 14px;
-    	line-height: 28px;
+    	font-size: 16px;
+    	line-height: 32px;
+    }
+
+    .tbitem {
+    	display: none;
+		font-size: 24px;
+    }
+
+    #title {
+    	font-size: 32px;
+    }
+
+	#title, #shortname, #shortnum {
+		display: inline-block;
+	}
+
+	.infoitem {
+		font-size: 14px;
+	}
+
+	.nolim {
+		width: auto;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+    #story {
+    	font-size: 16px;
+    	line-height: 32px;
     }
 
     .tbitem {
@@ -169,7 +204,7 @@ b { font-weight: 600; }
 	}
 
 	.infoitem {
-		font-size: 10px;
+		font-size: 14px;
 	}
 
 	.nolim {

@@ -9,9 +9,13 @@ $(document).ready(function() {
 
 	$(".turnoff").click(function () {
 		change("black", "white", .96);
+		html.style.setProperty("--on", "pointer");
+		html.style.setProperty("--off", "default");
 	});
 
 	$(".turnon").click(function () {
 		change("white", "black", .85);
+		html.style.setProperty("--on", "default");
+		html.style.setProperty("--off", "pointer");
 	});
 });
