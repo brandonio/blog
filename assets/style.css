@@ -1,7 +1,7 @@
 :root {
   --w: white;
   --b: black;
-  --opac: .96;
+  --opac: .95;
   --on: pointer;
   --off: default;
 }
@@ -48,10 +48,10 @@ body, html {
 }
 
 .infoitem {
-	font-size: 18px;
+	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
 	color: var(--w);
-	font-weight: 400;
+	font-weight: 300;
 }
 
 #story {
@@ -65,7 +65,6 @@ body, html {
 	font-family: 'Montserrat', sans-serif;
 	color: var(--w);
 	line-height: 44px;
-	font-weight: 400;
 }
 
 .nolim {
@@ -119,10 +118,6 @@ b { font-weight: 800; }
     	font-size: 36px;
     }
 
-    .infoitem {
-    	font-size: 16px;
-    }
-
     .nolim {
 		width: auto;
 	}
@@ -164,11 +159,11 @@ b { font-weight: 800; }
 
     .tbitem {
     	display: none;
-		font-size: 18px;
+		font-size: 16px;
     }
 
     #title {
-		font-size: 26px;
+		font-size: 24px;
     }
 
 	#title, #shortname, #shortnum {
@@ -181,5 +176,9 @@ b { font-weight: 800; }
 
 	.nolim {
 		width: auto;
+	}
+
+	#info {
+		justify-content: space-between;
 	}
 }

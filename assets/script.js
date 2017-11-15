@@ -8,7 +8,7 @@ $(document).ready(function() {
 	}
 
 	$(".turnoff").click(function () {
-		change("black", "white", .96);
+		change("black", "white", .95);
 		html.style.setProperty("--on", "pointer");
 		html.style.setProperty("--off", "default");
 	});
