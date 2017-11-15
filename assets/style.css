@@ -15,7 +15,6 @@ body, html {
 
 #topbar {
 	width: 96%;
-	max-width: 1700px;
 	height: 60px;
 	background: var(--w);
 	padding: 0 2%;
