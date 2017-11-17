@@ -56,11 +56,10 @@ body, html {
 
 #story {
 	width: 100%;
-	max-width: 800px;
-	padding: 60px 40px 125px;
+	max-width: 750px;
+	padding: 60px 50px 125px;
 	box-sizing: border-box;
 	margin: 0 auto;
-	text-align: left;
 	font-size: 22px;
 	font-family: 'Montserrat', sans-serif;
 	color: var(--w);
@@ -104,57 +103,25 @@ b { font-weight: 800; }
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-@media only screen and (max-width: 1100px) and (min-width: 900px) {
-    #story {
-    	font-size: 20px;
-    	line-height: 40px;
-    }
-
+@media only screen and (max-width: 1050px) and (min-width: 700px) {
     .tbitem {
-    	font-size: 28px;
-    }
-
-    #title {
-    	font-size: 36px;
-    }
-
-    .nolim {
-		width: auto;
-	}
-}
-
-@media only screen and (max-width: 900px) and (min-width: 650px) {
-    #story {
-    	font-size: 18px;
-    	line-height: 36px;
-    }
-
-    .tbitem {
-    	font-size: 26px;
     	display: none;
-    }
-
-    #title {
-    	font-size: 36px;
     }
 
     #title, #shortname, #shortnum {
 		display: inline-block;
 	}
 
-    .infoitem {
-    	font-size: 14px;
-    }
-
     .nolim {
 		width: auto;
 	}
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
     #story {
-    	font-size: 16px;
-    	line-height: 32px;
+    	font-size: 18px;
+    	line-height: 36px;
+    	padding: 40px 50px 125px;
     }
 
     .tbitem {
@@ -171,14 +138,14 @@ b { font-weight: 800; }
 	}
 
 	.infoitem {
-		font-size: 14px;
+		font-size: 10px;
 	}
 
 	.nolim {
 		width: auto;
 	}
 
-	#info {
-		justify-content: space-between;
+	#topbar {
+		height: 40px;
 	}
 }
