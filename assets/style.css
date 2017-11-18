@@ -52,12 +52,13 @@ body, html {
 	font-family: 'Montserrat', sans-serif;
 	color: var(--w);
 	font-weight: 300;
+	opacity: .7;
 }
 
 #story {
 	width: 100%;
-	max-width: 750px;
-	padding: 60px 50px 125px;
+	max-width: 800px;
+	padding: 60px 50px 150px;
 	box-sizing: border-box;
 	margin: 0 auto;
 	font-size: 22px;
@@ -91,7 +92,7 @@ li {
 	background-color: var(--b);
 }
 
-b { font-weight: 800; }
+b { font-weight: 700; }
 
 .turnon {
 	cursor: var(--on);
@@ -103,7 +104,7 @@ b { font-weight: 800; }
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-@media only screen and (max-width: 1050px) and (min-width: 700px) {
+@media only screen and (max-width: 1000px) and (min-width: 650px) {
     .tbitem {
     	display: none;
     }
@@ -117,16 +118,16 @@ b { font-weight: 800; }
 	}
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 650px) {
     #story {
-    	font-size: 18px;
+    	font-size: 13px;
     	line-height: 36px;
-    	padding: 40px 50px 125px;
+    	padding: 40px 40px 150px;
     }
 
     .tbitem {
     	display: none;
-		font-size: 16px;
+		font-size: 18px;
     }
 
     #title {
@@ -147,5 +148,9 @@ b { font-weight: 800; }
 
 	#topbar {
 		height: 40px;
+	}
+
+	#info {
+		padding: 16px 0 5px;
 	}
 }
