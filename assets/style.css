@@ -46,17 +46,17 @@ body, html {
 }
 
 .infoitem {
-	font-size: 16px;
+	font-size: 18px;
 	font-family: 'Montserrat', sans-serif;
 	color: var(--w);
 	font-weight: 300;
-	opacity: .7;
+	opacity: .8;
 }
 
 #story {
 	width: 100%;
 	max-width: 800px;
-	padding: 60px 50px 150px;
+	padding: 60px 50px 200px;
 	box-sizing: border-box;
 	margin: 0 auto;
 	font-size: 22px;
@@ -97,7 +97,7 @@ b { font-weight: 700; }
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-@media only screen and (max-width: 1000px) and (min-width: 650px) {
+@media only screen and (max-width: 1000px) and (min-width: 600px) {
     .tbitem {
     	display: none;
     }
@@ -111,11 +111,11 @@ b { font-weight: 700; }
 	}
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 600px) {
     #story {
     	font-size: 16px;
-    	line-height: 36px;
-    	padding: 40px 40px 150px;
+    	line-height: 32px;
+    	padding: 40px 30px 200px;
     }
 
     .tbitem {
@@ -132,7 +132,7 @@ b { font-weight: 700; }
 	}
 
 	.infoitem {
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 	.nolim {
