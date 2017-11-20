@@ -35,6 +35,10 @@ body, html {
 	font-size: 40px;
 }
 
+.homelink:link, .homelink:visited, .homelink:hover, .homelink:active {
+	color: var(--b);
+}
+
 #shortname, #shortnum {
 	display: none;
 }
@@ -102,7 +106,7 @@ li {
 	background-color: var(--w);
 }
 
-.tbitem::selection, #title::selection, .tbitem a::selection, .turnon::selection, .turnoff::selection {
+.tbitem::selection, #title::selection, .tbitem a::selection, .turnon::selection, .turnoff::selection, .homelink::selection {
 	color: var(--w);
 	background-color: var(--b);
 }

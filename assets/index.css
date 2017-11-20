@@ -31,6 +31,10 @@ body, html {
 	font-size: 40px;
 }
 
+.homelink:link, .homelink:visited, .homelink:hover, .homelink:active {
+	color: var(--b);
+}
+
 #blogs {
 	width: 100%;
 	max-width: 800px;
@@ -106,7 +110,7 @@ a:active {
 	background-color: var(--w);
 }
 
-#title::selection, .turnon::selection, .turnoff::selection {
+#title::selection, .turnon::selection, .turnoff::selection, .homelink::selection {
 	color: var(--w);
 	background-color: var(--b);
 }
