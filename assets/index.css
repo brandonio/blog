@@ -34,18 +34,18 @@ body, html {
 #blogs {
 	width: 100%;
 	max-width: 800px;
-	padding: 100px 50px 200px;
+	padding: 110px 50px 200px;
 	box-sizing: border-box;
 	margin: 0 auto;
-	font-size: 22px;
 	font-family: 'Montserrat', sans-serif;
 	color: var(--w);
-	line-height: 66px;
 }
 
 .blogitem {
 	display: flex;
 	justify-content: space-between;
+	align-items: flex-end;
+	padding: 0 0 35px 0;
 }
 
 .num {
@@ -53,9 +53,9 @@ body, html {
 	width: 50%;
 	max-width: 400px;
 	text-align: right;
-	font-size: 33px;
-	margin-right: 33px;
-	letter-spacing: .33px;
+	font-size: 35px;
+	height: 35px;
+	margin-right: 35px;
 }
 
 .name {
@@ -63,9 +63,25 @@ body, html {
 	width: 50%;
 	max-width: 400px;
 	text-align: left;
+	font-size: 22px;
+	height: 22px;
 }
 
-#blogs::selection, .blogitem::selection {
+#egg {
+	font-family: 'Times New Roman';
+	position: absolute;
+	font-size: 14px;
+	margin-top: 70px;
+	left: 0;
+	color: black;
+}
+
+#egg::selection, #egg i::selection {
+	color: none;
+	background: none
+}
+
+#blogs::selection, .blogitem::selection, .name::selection, .num::selection, .uno::selection {
 	color: var(--b);
 	background-color: var(--w);
 }
@@ -80,23 +96,39 @@ body, html {
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-@media only screen and (max-width: 500px) {
-    #blogs {
-    	font-size: 16px;
-    	line-height: 48px;
-    	padding: 60px 30px 200px;
-    }
-
-    #title {
-		font-size: 26px;
-    }
-
+@media only screen and (max-width: 700px) {
 	#topbar {
 		height: 40px;
 	}
 
-	.num {
-		font-size: 24px;
-		padding-right: 24px;
+	#title {
+		font-size: 28px;
 	}
+
+	#blogs {
+		padding: 70px 30px 200px;
+	}
+
+	.blogitem {
+		padding: 0 0 35px 0;
+	}
+
+	.num {
+		font-size: 22px;
+		margin-right: 22px;
+		height: 22px;
+	}
+
+	.name {
+		font-size: 16px;
+		height: 16px;
+	}
+
+	#egg {
+		margin-top: 42.5px;
+		font-size: 12px; /* 10px irl */
+		transform: scale(.833);
+		margin-left: -40px; /* needed b/c of scaling */
+		width: 480px; /* 400px irl */
+	}	
 }
