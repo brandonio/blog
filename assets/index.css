@@ -113,6 +113,7 @@ a:active {
 
 .turnon, .turnoff {
 	cursor: pointer;
+	display: inline-block;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 

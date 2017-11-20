@@ -115,10 +115,6 @@ b { font-weight: 700; }
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-#butt {
-	/*display: inline-block;*/
-}
-
 /*.turnon:active, .turnoff:active, .turnon:hover, .turnoff:hover {
 	color: var(--b); stopped myself from going into tech debt lol
 }*/
