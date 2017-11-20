@@ -75,17 +75,34 @@ body, html {
 	bottom: -200%;
 }
 
+a:link {
+	color: #4885ed;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #925C92;
+}
+
+a:hover {
+	color: #3cba54;
+}
+
+a:active {
+	color: #db3236;
+}
+
 li {
 	font-weight: 400;
 	list-style-type: none;
 }
 
-#story::selection, b::selection, i::selection, br::selection, li::selection, .nolim::selection, .infoitem::selection/*, .imp::selection*/ {
+#story::selection, b::selection, i::selection, br::selection, li::selection, .nolim::selection, .infoitem::selection, a::selection, #butt::selection/*, .imp::selection*/ {
 	color: var(--b);
 	background-color: var(--w);
 }
 
-.tbitem::selection, #title::selection, .tbitem a::selection {
+.tbitem::selection, #title::selection, .tbitem a::selection, .turnon::selection, .turnoff::selection {
 	color: var(--w);
 	background-color: var(--b);
 }
@@ -93,9 +110,18 @@ li {
 b { font-weight: 700; }
 
 .turnon, .turnoff {
+	display: inline-block;
 	cursor: pointer;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
+
+#butt {
+	/*display: inline-block;*/
+}
+
+/*.turnon:active, .turnoff:active, .turnon:hover, .turnoff:hover {
+	color: var(--b); stopped myself from going into tech debt lol
+}*/
 
 @media only screen and (max-width: 1000px) and (min-width: 600px) {
 	.tbitem {

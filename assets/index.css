@@ -48,22 +48,25 @@ body, html {
 	padding: 0 0 35px 0;
 }
 
-.num {
+.numlink, .namelink {
 	cursor: pointer;
+}
+
+.num, .name {
 	width: 50%;
 	max-width: 400px;
 	text-align: right;
+}
+
+.num {
 	font-size: 35px;
 	height: 35px;
 	margin-right: 35px;
 }
 
 .name {
-	cursor: pointer;
-	width: 50%;
-	max-width: 400px;
-	text-align: left;
 	font-size: 22px;
+	text-align: left;
 	height: 22px;
 }
 
@@ -76,12 +79,29 @@ body, html {
 	color: black;
 }
 
+a:link {
+	color: #4885ed;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #925C92;
+}
+
+a:hover {
+	color: #3cba54;
+}
+
+a:active {
+	color: #db3236;
+}
+
 #egg::selection, #egg i::selection {
 	color: none;
 	background: none
 }
 
-#blogs::selection, .blogitem::selection, .name::selection, .num::selection, .uno::selection {
+#blogs::selection, .blogitem::selection, .name::selection, .num::selection, a::selection {
 	color: var(--b);
 	background-color: var(--w);
 }
@@ -126,9 +146,9 @@ body, html {
 
 	#egg {
 		margin-top: 42.5px;
-		font-size: 12px; /* 10px irl */
-		transform: scale(.833);
-		margin-left: -40px; /* needed b/c of scaling */
-		width: 480px; /* 400px irl */
+		font-size: 12px; /* 9px irl */
+		transform: scale(.75);
+		margin-left: -66px; /* needed b/c of scaling */
+		width: 533px; /* 400px irl */
 	}	
 }
