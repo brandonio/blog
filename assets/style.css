@@ -189,7 +189,7 @@ b { font-weight: 700; }
 	}
 
 	#title {
-		font-size: 26px;
+		font-size: 24px;
 	}
 
 	#title, #shortname, #shortnum {
@@ -223,6 +223,30 @@ b { font-weight: 700; }
 		font-size: 12px; /* 8px irl */
 		transform: scale(.666);
 		margin-left: -55px; /* needed b/c of scaling */
-		width: 330px; /* 220px irl */
+		width: 360px; /* 240px irl */
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	.tbitem { font-size: 16px; }
+
+	#title { font-size: 22px; }
+
+	#story {
+		font-size: 14px;
+		line-height: 28px;
+		padding: 45px 30px 200px;
+	}
+
+	#info { padding: 15px 0 15px; }
+
+	.infoitem { font-size: 12px; }
+
+	#egg {
+		margin-top: 35px;
+		font-size: 12px; /* 8px irl */
+		transform: scale(.666);
+		margin-left: -58px; /* needed b/c of scaling */
+		width: 350px; /* 233px irl */
 	}
 }

@@ -38,7 +38,7 @@ body, html {
 #blogs {
 	width: 100%;
 	max-width: 800px;
-	padding: 120px 50px 200px;
+	padding: 110px 50px 200px;
 	box-sizing: border-box;
 	margin: 0 auto;
 	color: var(--w);
@@ -51,9 +51,7 @@ body, html {
 	padding: 0 0 45px 0;
 }
 
-.numlink, .namelink {
-	cursor: pointer;
-}
+.numlink, .namelink { cursor: pointer; }
 
 .num, .name {
 	width: 50%;
@@ -90,25 +88,15 @@ a:link, a:visited, a:hover, a:active  {
 	text-decoration: none;
 }
 
-.amarillo:hover, .amarillo:active {
-	color: #f4c20d;
-}
+.amarillo:hover, .amarillo:active { color: #f4c20d; }
 
-.azul:hover, .azul:active {
-	color: #4885ed;
-}
+.azul:hover, .azul:active { color: #4885ed; }
 
-.rojo:hover, .rojo:active {
-	color: #db3236;
-}
+.rojo:hover, .rojo:active { color: #db3236; }
 
-.verde:hover, .verde:active {
-	color: #3cba54;
-}
+.verde:hover, .verde:active { color: #3cba54; }
 
-.ze {
-	display: inline-block;
-}
+.ze { display: inline-block; }
 
 #egg::selection, #egg i::selection {
 	color: none;
@@ -131,22 +119,14 @@ a:link, a:visited, a:hover, a:active  {
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-@media only screen and (max-width: 600px) {
-	#topbar {
-		height: 40px;
-	}
+@media only screen and (max-width: 600px) and (min-width: 350px) {
+	#topbar { height: 40px; }
 
-	#title {
-		font-size: 32px;
-	}
+	#title { font-size: 32px; }
 
-	#blogs {
-		padding: 70px 30px 200px;
-	}
+	#blogs { padding: 70px 30px 200px; }
 
-	.blogitem {
-		padding: 0 0 35px 0;
-	}
+	.blogitem { padding: 0 0 35px 0; }
 
 	.num {
 		font-size: 24px;
@@ -160,10 +140,39 @@ a:link, a:visited, a:hover, a:active  {
 	}
 
 	#egg {
-		margin-top: 37px;
+		margin-top: 35px;
 		font-size: 12px; /* 8px irl */
 		transform: scale(.666);
-		margin-left: -55px; /* needed b/c of scaling */
-		width: 330px; /* 220px irl */
+		margin-left: -60px; /* needed b/c of scaling */
+		width: 360px; /* 240px irl */
+	}
+}
+
+@media only screen and (max-width: 350px) {
+	#topbar { height: 40px; }
+
+	#title { font-size: 28px; }
+
+	#blogs { padding: 65px 30px 200px; }
+
+	.blogitem { padding: 0 0 24px 0; }
+
+	.num {
+		font-size: 20px;
+		margin-right: 10px;
+		height: 20px;
+	}
+
+	.name {
+		font-size: 14px;
+		height: 16px;
+	}
+
+	#egg {
+		margin-top: 35px;
+		font-size: 12px; /* 8px irl */
+		transform: scale(.666);
+		margin-left: -58px; /* needed b/c of scaling */
+		width: 350px; /* 233px irl */
 	}
 }
