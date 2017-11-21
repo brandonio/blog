@@ -80,7 +80,7 @@ body, html {
 	display: none;
 	position: absolute;
 	font-size: 14px;
-	margin-top: 70px;
+	margin-top: 60px;
 	left: 0;
 	color: black;
 }
@@ -160,10 +160,10 @@ a:link, a:visited, a:hover, a:active  {
 	}
 
 	#egg {
-		margin-top: 42.5px;
+		margin-top: 37px;
 		font-size: 12px; /* 8px irl */
 		transform: scale(.666);
-		margin-left: -83px; /* needed b/c of scaling */
-		width: 500px; /* 330px irl */
-	}	
+		margin-left: -55px; /* needed b/c of scaling */
+		width: 330px; /* 220px irl */
+	}
 }

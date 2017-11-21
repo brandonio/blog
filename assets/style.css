@@ -48,6 +48,7 @@ body, html {
 	transform: translateY(-50%);
 	height: 200px;
 	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
 #prev, #next {
@@ -67,10 +68,6 @@ body, html {
 #next { right: 25px; }
 
 #inext { right: 0; }
-
-#prev:hover, #next:hover {
-	/* maybe add something later */
-}
 
 #story {
 	width: 100%;
@@ -127,7 +124,7 @@ li {
 	display: none;
 	position: absolute;
 	font-size: 14px;
-	margin-top: 70px;
+	margin-top: 60px;
 	left: 0;
 	color: black;
 }
@@ -222,10 +219,10 @@ b { font-weight: 700; }
 	.nolim { width: auto; }
 
 	#egg {
-		margin-top: 42.5px;
+		margin-top: 37px;
 		font-size: 12px; /* 8px irl */
 		transform: scale(.666);
-		margin-left: -100px; /* needed b/c of scaling */
-		width: 600px; /* 400px irl */
+		margin-left: -55px; /* needed b/c of scaling */
+		width: 330px; /* 220px irl */
 	}
 }
