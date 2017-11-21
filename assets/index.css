@@ -28,7 +28,7 @@ body, html {
 	font-size: 50px;
 	color: var(--b);
 	font-weight: 600;
-	font-size: 40px;
+	font-size: 45px;
 }
 
 .homelink:link, .homelink:visited, .homelink:hover, .homelink:active {
@@ -38,10 +38,9 @@ body, html {
 #blogs {
 	width: 100%;
 	max-width: 800px;
-	padding: 110px 50px 200px;
+	padding: 120px 50px 200px;
 	box-sizing: border-box;
 	margin: 0 auto;
-	font-family: 'Montserrat', sans-serif;
 	color: var(--w);
 }
 
@@ -49,7 +48,7 @@ body, html {
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-end;
-	padding: 0 0 35px 0;
+	padding: 0 0 45px 0;
 }
 
 .numlink, .namelink {
@@ -57,22 +56,23 @@ body, html {
 }
 
 .num, .name {
+	width: 50%;
 	max-width: 400px;
 	text-align: right;
 }
 
 .num {
-	width: 45%;
+	font-family: 'PT Mono', monospace;
 	font-size: 40px;
 	height: 40px;
 	margin-right: 20px;
 }
 
 .name {
-	width: 55%;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 26px;
 	text-align: left;
-	height: 26px;
+	height: 30px;
 }
 
 #egg {
@@ -84,21 +84,25 @@ body, html {
 	color: black;
 }
 
-a:link {
-	color: #4885ed;
+a:link, a:visited, a:hover, a:active  {
+	color: var(--w);
 	text-decoration: none;
 }
 
-a:visited {
-	color: #925C92;
+.amarillo:hover, .amarillo:active {
+	color: #f4c20d;
 }
 
-a:hover {
-	color: #3cba54;
+.azul:hover, .azul:active {
+	color: #4885ed;
 }
 
-a:active {
+.rojo:hover, .rojo:active {
 	color: #db3236;
+}
+
+.verde:hover, .verde:active {
+	color: #3cba54;
 }
 
 #egg::selection, #egg i::selection {
