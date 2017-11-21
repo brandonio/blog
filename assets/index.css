@@ -38,7 +38,7 @@ body, html {
 #blogs {
 	width: 100%;
 	max-width: 800px;
-	padding: 110px 50px 200px;
+	padding: 120px 50px 200px;
 	box-sizing: border-box;
 	margin: 0 auto;
 	color: var(--w);
