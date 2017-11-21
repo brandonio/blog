@@ -1,9 +1,9 @@
 $(document).ready(function() {
-	const ind = $('#title').css('font-size') == "45px";
+	const html = document.getElementsByTagName('html')[0];
+	const ind = $('.ze').length > 0;
 	const huevo = $("#egg").length > 0;
 
-	var html = document.getElementsByTagName('html')[0];
-	var og = true;
+	let og = true;
 
 	function change(a, b, o, ch, e) {
 		html.style.setProperty("--b", a);
