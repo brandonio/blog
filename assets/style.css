@@ -101,6 +101,21 @@ li {
 	list-style-type: none;
 }
 
+#egg {
+	font-family: 'Times New Roman';
+	display: none;
+	position: absolute;
+	font-size: 14px;
+	margin-top: 70px;
+	left: 0;
+	color: black;
+}
+
+#egg::selection, #egg i::selection {
+	color: none;
+	background: none
+}
+
 #story::selection, b::selection, i::selection, br::selection, li::selection, .nolim::selection, .infoitem::selection, a::selection, #butt::selection/*, .imp::selection*/ {
 	color: var(--b);
 	background-color: var(--w);
@@ -148,7 +163,7 @@ b { font-weight: 700; }
 	}
 
 	#title {
-		font-size: 28px;
+		font-size: 26px;
 	}
 
 	#title, #shortname, #shortnum {
@@ -166,10 +181,18 @@ b { font-weight: 700; }
 	}
 
 	.infoitem {
-		font-size: 12px;
+		font-size: 13px;
 	}
 
 	.nolim {
 		width: auto;
+	}
+
+	#egg {
+		margin-top: 42.5px;
+		font-size: 12px; /* 8px irl */
+		transform: scale(.666);
+		margin-left: -100px; /* needed b/c of scaling */
+		width: 600px; /* 400px irl */
 	}
 }

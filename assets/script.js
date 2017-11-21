@@ -1,24 +1,42 @@
 $(document).ready(function() {
-	let html = document.getElementsByTagName('html')[0];
+	const ind = $('#title').css('font-size') == "45px";
+	const huevo = $("#egg").length > 0;
 
-	function change(a, b, o, ch) {
+	var html = document.getElementsByTagName('html')[0];
+	var og = true;
+
+	function change(a, b, o, ch, e) {
 		html.style.setProperty("--b", a);
 		html.style.setProperty("--w", b);
 		html.style.setProperty("--opac", o);
 		$.each($(".turnoff"), function() { $(this).html(ch.repeat($(this).html().length)) });
+		if (ind || huevo) {
+			if (ind) {
+				$.each($(".ze"), function() { $(this).html(ch.repeat($(this).html().length)) });
+			}
+			if (e) {
+				$("#egg").show();
+			} else {
+				$("#egg").hide();
+			}
+		}
+		og = !og;
 	}
 
 	function on() {
-		change("white", "black", .87, "O");
+		if (og) {
+			change("white", "black", .87, "O", true);
+		}
 	}
 
 	function off() {
-		change("black", "white", .95, "0");
+		if (!og) {
+			change("black", "white", .95, "0", false);
+		}
 	}
 
 	$(".turnoff").click(off);
 	$(".turnoff").hover(off);
 	$(".turnon").click(on);
 	$(".turnon").hover(on);
-
 });
