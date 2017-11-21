@@ -203,11 +203,11 @@ b { font-weight: 700; }
 
 	#prev, #next, #iprev, #inext { height: 100px; }
 
-	#prev { left: 12.5px; }
+	#prev { left: 10px; }
 
-	#next { right: 12.5px; }
+	#next { right: 10px; }
 	
-	#iprev, #inext { width: 12.5px; }
+	#iprev, #inext { width: 10px; }
 
 	#story {
 		font-size: 16px;

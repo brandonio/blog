@@ -163,7 +163,7 @@ a:link, a:visited, a:hover, a:active  {
 		margin-top: 42.5px;
 		font-size: 12px; /* 8px irl */
 		transform: scale(.666);
-		margin-left: -100px; /* needed b/c of scaling */
-		width: 600px; /* 400px irl */
+		margin-left: -83px; /* needed b/c of scaling */
+		width: 500px; /* 330px irl */
 	}	
 }
