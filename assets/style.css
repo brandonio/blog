@@ -12,10 +12,10 @@ body, html {
 }
 
 #topbar {
-	width: 96%;
+	width: 98%;
 	height: 60px;
 	background: var(--w);
-	padding: 0 2%;
+	padding: 0 1%;
 	position: fixed;
 	z-index: 2;
 	display: flex;
@@ -26,7 +26,7 @@ body, html {
 
 .tbitem {
 	font-family: 'PT Mono', monospace;
-	font-size: 30px;
+	font-size: 28px;
 	color: var(--b);
 }
 
@@ -88,7 +88,7 @@ body, html {
 }
 
 .infoitem {
-	font-size: 18px;
+	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
 	color: var(--w);
 	font-weight: 300;
@@ -156,12 +156,10 @@ b { font-weight: 700; }
 	color: var(--b); stopped myself from going into tech debt lol
 }*/
 
-@media only screen and (max-width: 1000px) and (min-width: 600px) {
+@media only screen and (max-width: 1000px) and (min-width: 650px) {
 	.tbitem { display: none; }
 
-	#title, #shortname, #shortnum {
-		display: inline-block;
-	}
+	#title, #shortname, #shortnum { display: inline-block; }
 
 	.nolim { width: auto; }
 
@@ -176,25 +174,17 @@ b { font-weight: 700; }
 	#iprev, #inext { width: 20px; }
 }
 
-@media only screen and (max-width: 600px) {
-	#topbar {
-		height: 40px;
-		width: 98%;
-		padding: 0 1%;
-	}
+@media only screen and (max-width: 650px) {
+	#topbar { height: 40px; }
 
 	.tbitem {
 		display: none;
 		font-size: 18px;
 	}
 
-	#title {
-		font-size: 24px;
-	}
+	#title { font-size: 24px; }
 
-	#title, #shortname, #shortnum {
-		display: inline-block;
-	}
+	#title, #shortname, #shortnum { display: inline-block; }
 
 	#prev, #next { width: 2px; }
 
@@ -207,8 +197,8 @@ b { font-weight: 700; }
 	#iprev, #inext { width: 10px; }
 
 	#story {
-		font-size: 16px;
-		line-height: 32px;
+		font-size: 17px;
+		line-height: 34px;
 		padding: 50px 30px 200px;
 	}
 
@@ -230,11 +220,11 @@ b { font-weight: 700; }
 @media only screen and (max-width: 350px) {
 	.tbitem { font-size: 16px; }
 
-	#title { font-size: 22px; }
+	#title { font-size: 20px; }
 
 	#story {
-		font-size: 14px;
-		line-height: 28px;
+		font-size: 15px;
+		line-height: 30px;
 		padding: 45px 30px 200px;
 	}
 
