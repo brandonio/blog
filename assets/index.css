@@ -16,7 +16,7 @@ body, html {
 	height: 60px;
 	background: var(--w);
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -31,41 +31,36 @@ body, html {
 	font-size: 45px;
 }
 
-.homelink:link, .homelink:visited, .homelink:hover, .homelink:active {
-	color: var(--b);
-}
-
 #blogs {
-	width: 100%;
-	max-width: 800px;
-	padding: 110px 50px 200px;
-	box-sizing: border-box;
-	margin: 0 auto;
+	padding: 120px 0px 200px 0px;
 	color: var(--w);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .blogitem {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 0 0 50px 0;
+	margin: 0 0 50px 0;
 }
 
-.numlink, .namelink { cursor: pointer; }
-
-.num, .name {
-	max-width: 400px;
-}
+.num, .name { text-align: center; }
 
 .num {
 	font-family: 'PT Mono', monospace;
 	font-size: 40px;
+	padding-bottom: 30px;
 }
 
 .name {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 30px;
-	text-align: left;
+	position: absolute;
+	padding-top: 40px;
+	order: -1;
+	z-index: 2;
 }
 
 #egg {
@@ -87,22 +82,37 @@ a:link {
 	text-decoration: none;
 }
 
-.blogitem:hover .amarillo, .blogitem:active .amarillo { color: #f4c20d; }
+.amarillo .name:hover + .num { color: #f4c20d; } 
+.amarillo .name:hover { color: #f4c20d; }
 
-.blogitem:hover .azul, .blogitem:active .azul { color: #4885ed; }
+.azul .name:hover + .num { color: #4885ed; } 
+.azul .name:hover { color: #4885ed; }
+
+.rojo .name:hover + .num { color: #db3236; } 
+.rojo .name:hover { color: #db3236; }
+
+.verde .name:hover + .num { color: #3cba54; } 
+.verde .name:hover { color: #3cba54; }
+
+
+/*a:hover .amarillo a {  }*/
+
+/*.blogitem:hover .azul, .blogitem:active .azul { color: #4885ed; }
+
 
 .blogitem:hover .rojo, .blogitem:active .rojo { color: #db3236; }
 
-.blogitem:hover .verde, .blogitem:active .verde { color: #3cba54; }
+
+.blogitem:hover .verde, .blogitem:active .verde { color: #3cba54; }*/
 
 .ze { display: inline-block; }
 
-#egg::selection, #egg i::selection {
+#egg::selection, #egg i::selection, #egg b::selection {
 	color: none;
 	background: none
 }
 
-#blogs::selection, .blogitem::selection, .name::selection, .num::selection, a::selection {
+#blogs::selection, .blogitem::selection, .name::selection, .num::selection, a::selection, .ze::selection {
 	color: var(--b);
 	background-color: var(--w);
 }
@@ -118,23 +128,23 @@ a:link {
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-@media only screen and (max-width: 500px) and (min-width: 350px) {
+@media only screen and (max-width: 500px) and (min-width: 360px) {
 	#topbar { height: 40px; }
 
 	#title { font-size: 32px; }
 
 	#blogs { padding: 80px 30px 200px 30px; }
 
-	.blogitem {
-		padding: 0 0 40px 0;
-	}
+	.blogitem { margin: 0 0 40px 0; }
 
 	.num {
 		font-size: 28px;
+		padding-bottom: 22px;
 	}
 
 	.name {
-		font-size: 24px;
+		font-size: 22px;
+		padding-top: 28px;
 	}
 
 	#egg {
@@ -146,21 +156,23 @@ a:link {
 	}
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 360px) {
 	#topbar { height: 40px; }
 
 	#title { font-size: 26px; }
 
 	#blogs { padding: 65px 30px 200px 30px; }
 
-	.blogitem { padding: 0 0 24px 0; }
+	.blogitem { margin: 0 0 24px 0; }
 
 	.num {
 		font-size: 24px;
+		padding-bottom: 18px;
 	}
 
 	.name {
-		font-size: 20px;
+		font-size: 18px;
+		padding-top: 24px;
 	}
 
 	#egg {

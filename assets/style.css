@@ -56,11 +56,6 @@ body, html {
 	width: 6px;
 }
 
-#iprev, #inext {
-	background: var(--b);
-	width: 25px;
-}
-
 #prev { left: 25px; }
 
 #iprev { left: 0; }
@@ -68,6 +63,11 @@ body, html {
 #next { right: 25px; }
 
 #inext { right: 0; }
+
+#iprev, #inext {
+	background: var(--b);
+	width: 25px;
+}
 
 #story {
 	width: 100%;
@@ -129,7 +129,7 @@ li {
 	color: black;
 }
 
-#egg::selection, #egg i::selection {
+#egg::selection, #egg i::selection, #egg b::selection {
 	color: none;
 	background: none
 }
@@ -156,7 +156,7 @@ b { font-weight: 700; }
 	color: var(--b); stopped myself from going into tech debt lol
 }*/
 
-@media only screen and (max-width: 1000px) and (min-width: 650px) {
+@media only screen and (max-width: 1050px) and (min-width: 700px) {
 	.tbitem { display: none; }
 
 	#title, #shortname, #shortnum { display: inline-block; }
@@ -174,7 +174,7 @@ b { font-weight: 700; }
 	#iprev, #inext { width: 20px; }
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
 	#topbar { height: 40px; }
 
 	.tbitem {
@@ -217,7 +217,7 @@ b { font-weight: 700; }
 	}
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 360px) {
 	.tbitem { font-size: 16px; }
 
 	#title { font-size: 20px; }
