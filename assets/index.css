@@ -46,32 +46,26 @@ body, html {
 
 .blogitem {
 	display: flex;
-	/*justify-content: space-between;*/
-	align-items: flex-end;
-	padding: 0 0 45px 0;
+	flex-direction: column;
+	align-items: center;
+	padding: 0 0 50px 0;
 }
 
 .numlink, .namelink { cursor: pointer; }
 
 .num, .name {
-	/*width: 47.5%;*/
-	width: 50%;
 	max-width: 400px;
-	text-align: right;
 }
 
 .num {
 	font-family: 'PT Mono', monospace;
 	font-size: 40px;
-	height: 40px;
-	margin-right: 30px;
 }
 
 .name {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 26px;
+	font-size: 30px;
 	text-align: left;
-	height: 30px;
 }
 
 #egg {
@@ -84,18 +78,22 @@ body, html {
 	color: black;
 }
 
-a:link, a:visited, a:hover, a:active  {
+a:visited  {
 	color: var(--w);
 	text-decoration: none;
 }
 
-.amarillo:hover, .amarillo:active { color: #f4c20d; }
+a:link {
+	text-decoration: none;
+}
 
-.azul:hover, .azul:active { color: #4885ed; }
+.blogitem:hover .amarillo, .blogitem:active .amarillo { color: #f4c20d; }
 
-.rojo:hover, .rojo:active { color: #db3236; }
+.blogitem:hover .azul, .blogitem:active .azul { color: #4885ed; }
 
-.verde:hover, .verde:active { color: #3cba54; }
+.blogitem:hover .rojo, .blogitem:active .rojo { color: #db3236; }
+
+.blogitem:hover .verde, .blogitem:active .verde { color: #3cba54; }
 
 .ze { display: inline-block; }
 
@@ -120,24 +118,23 @@ a:link, a:visited, a:hover, a:active  {
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
-@media only screen and (max-width: 800px) and (min-width: 500px) {
+@media only screen and (max-width: 500px) and (min-width: 350px) {
 	#topbar { height: 40px; }
 
 	#title { font-size: 32px; }
 
-	#blogs { padding: 70px 30px 200px; }
+	#blogs { padding: 80px 30px 200px 30px; }
 
-	.blogitem { padding: 0 0 35px 0; }
+	.blogitem {
+		padding: 0 0 40px 0;
+	}
 
 	.num {
-		font-size: 22px;
-		margin-right: 17px;
-		height: 22px;
+		font-size: 28px;
 	}
 
 	.name {
-		font-size: 17px;
-		height: 19px;
+		font-size: 24px;
 	}
 
 	#egg {
@@ -149,24 +146,21 @@ a:link, a:visited, a:hover, a:active  {
 	}
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 350px) {
 	#topbar { height: 40px; }
 
-	#title { font-size: 24px; }
+	#title { font-size: 26px; }
 
-	#blogs { padding: 65px 30px 200px; }
+	#blogs { padding: 65px 30px 200px 30px; }
 
 	.blogitem { padding: 0 0 24px 0; }
 
 	.num {
-		font-size: 16px;
-		margin-right: 12px;
-		height: 16px;
+		font-size: 24px;
 	}
 
 	.name {
-		font-size: 13px;
-		height: 15px;
+		font-size: 20px;
 	}
 
 	#egg {
