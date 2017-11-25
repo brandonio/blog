@@ -16,7 +16,7 @@ body, html {
 	height: 60px;
 	background: var(--w);
 	position: fixed;
-	z-index: 3;
+	z-index: 4;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -59,8 +59,17 @@ body, html {
 	font-size: 30px;
 	position: absolute;
 	padding-top: 40px;
-	order: -1;
 	z-index: 2;
+	order: -1;
+}
+
+.snum {
+	z-index: 3;
+	padding-bottom: 34px;
+}
+
+.sname {
+	/*padding-top: 3px;*/
 }
 
 #egg {
@@ -94,16 +103,15 @@ a:link {
 .verde .name:hover + .num { color: #3cba54; } 
 .verde .name:hover { color: #3cba54; }
 
-
-/*a:hover .amarillo a {  }*/
-
-/*.blogitem:hover .azul, .blogitem:active .azul { color: #4885ed; }
-
-
-.blogitem:hover .rojo, .blogitem:active .rojo { color: #db3236; }
-
-
-.blogitem:hover .verde, .blogitem:active .verde { color: #3cba54; }*/
+/* if title is shorter than blog number*/
+.amarillo .snum:hover + .sname { color: #f4c20d; }
+.azul .snum:hover + .sname { color: #4885ed; }
+.rojo .snum:hover + .sname { color: #db3236; }
+.verde .snum:hover + .sname { color: #3cba54; }
+.amarillo .snum:hover { color: #f4c20d; }
+.azul .snum:hover { color: #4885ed; }
+.rojo .snum:hover { color: #db3236; }
+.verde .snum:hover { color: #3cba54; }
 
 .ze { display: inline-block; }
 
