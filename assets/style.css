@@ -95,7 +95,10 @@ body, html {
 	opacity: .8;
 }
 
-.nolim { width: 150%; }
+.nolim {
+	width: 150%;
+	display: inline-block;
+}
 
 #special {
 	position: absolute;
@@ -114,11 +117,6 @@ a:hover { color: #3cba54; }
 
 a:active { color: #db3236; }
 
-li {
-	font-weight: 400;
-	list-style-type: none;
-}
-
 #egg {
 	font-family: 'Times New Roman';
 	display: none;
@@ -134,7 +132,7 @@ li {
 	background: none
 }
 
-#story::selection, b::selection, i::selection, br::selection, li::selection, .nolim::selection, .infoitem::selection, a::selection, #butt::selection/*, .imp::selection*/ {
+#story::selection, b::selection, i::selection, br::selection, .myli::selection, .nolim::selection, .infoitem::selection, a::selection, #butt::selection/*, .imp::selection*/ {
 	color: var(--b);
 	background-color: var(--w);
 }
