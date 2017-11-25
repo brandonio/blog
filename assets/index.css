@@ -65,11 +65,7 @@ body, html {
 
 .snum {
 	z-index: 3;
-	padding-bottom: 34px;
-}
-
-.sname {
-	/*padding-top: 3px;*/
+	padding-bottom: 33px;
 }
 
 #egg {
@@ -104,10 +100,10 @@ a:link {
 .verde .name:hover { color: #3cba54; }
 
 /* if title is shorter than blog number*/
-.amarillo .snum:hover + .sname { color: #f4c20d; }
-.azul .snum:hover + .sname { color: #4885ed; }
-.rojo .snum:hover + .sname { color: #db3236; }
-.verde .snum:hover + .sname { color: #3cba54; }
+.amarillo .snum:hover + .name { color: #f4c20d; }
+.azul .snum:hover + .name { color: #4885ed; }
+.rojo .snum:hover + .name { color: #db3236; }
+.verde .snum:hover + .name { color: #3cba54; }
 .amarillo .snum:hover { color: #f4c20d; }
 .azul .snum:hover { color: #4885ed; }
 .rojo .snum:hover { color: #db3236; }
@@ -150,6 +146,8 @@ a:link {
 		padding-bottom: 22px;
 	}
 
+	.snum { padding-bottom: 23px; }
+
 	.name {
 		font-size: 22px;
 		padding-top: 28px;
@@ -177,6 +175,8 @@ a:link {
 		font-size: 24px;
 		padding-bottom: 18px;
 	}
+
+	.snum { padding-bottom: 19px; }
 
 	.name {
 		font-size: 18px;
