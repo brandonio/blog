@@ -1,0 +1,115 @@
+:root {
+  --w: white;
+  --b: black;
+  --opac: .95;
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	background: var(--b);
+	overflow-x: hidden;
+}
+
+#topbar {
+	width: 100%;
+	height: 60px;
+	background: var(--w);
+	position: fixed;
+	z-index: 4;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: var(--opac);
+}
+
+#title {
+	font-family: 'PT Mono', monospace;
+	font-size: 50px;
+	color: var(--b);
+	font-weight: 600;
+	font-size: 45px;
+}
+
+#story {
+	width: 100%;
+	max-width: 1000px;
+	padding: 80px 60px 200px;
+	box-sizing: border-box;
+	font-size: 22px;
+	font-family: 'Montserrat', sans-serif;
+	color: var(--w);
+	line-height: 44px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto; 
+}
+
+.item {
+	display: flex;
+	flex-direction: row;
+}
+
+.name {
+	width: 50%;
+	font-size: 38px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.value {
+	width: 50%;
+	font-size: 22px;
+}
+
+#story::selection, b::selection, i::selection, br::selection, .myli::selection, .nolim::selection, .infoitem::selection, a::selection, #butt::selection/*, .imp::selection*/ {
+	color: var(--b);
+	background-color: var(--w);
+}
+
+.tbitem::selection, #title::selection, .tbitem a::selection, .turnon::selection, .turnoff::selection, .homelink::selection {
+	color: var(--w);
+	background-color: var(--b);
+}
+
+b { font-weight: 700; }
+
+.turnon, .turnoff {
+	display: inline-block;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+/*.turnon:active, .turnoff:active, .turnon:hover, .turnoff:hover {
+	color: var(--b); stopped myself from going into tech debt lol
+}*/
+@media only screen and (max-width: 800px) {
+	#topbar { height: 40px; }
+
+	#title { font-size: 32px; }
+
+	#story {
+		font-size: 18px;
+		line-height: 36px;
+		padding: 50px 30px 200px;
+	}
+
+	.item { flex-direction: column; }
+	.value { text-align: center; }
+
+	.name, .value { width: 100%; }
+}
+
+@media only screen and (max-width: 360px) {
+	#title { font-size: 24px; }
+
+	#story {
+		font-size: 15px;
+		line-height: 30px;
+		padding: 45px 30px 200px;
+	}
+
+	.name { font-size: 20px; }	
+	.value { font-size: 15px; }
+}

@@ -26,7 +26,7 @@ body, html {
 
 .tbitem {
 	font-family: 'PT Mono', monospace;
-	font-size: 28px;
+	font-size: 22px;
 	color: var(--b);
 }
 
@@ -154,7 +154,7 @@ b { font-weight: 700; }
 	color: var(--b); stopped myself from going into tech debt lol
 }*/
 
-@media only screen and (max-width: 1050px) and (min-width: 700px) {
+@media only screen and (max-width: 1000px) and (min-width: 700px) {
 	.tbitem { display: none; }
 
 	#title, #shortname, #shortnum { display: inline-block; }
@@ -195,14 +195,14 @@ b { font-weight: 700; }
 	#iprev, #inext { width: 10px; }
 
 	#story {
-		font-size: 17px;
-		line-height: 34px;
+		font-size: 18px;
+		line-height: 36px;
 		padding: 50px 30px 200px;
 	}
 
 	#info { padding: 15px 0 20px; }
 
-	.infoitem { font-size: 13px; }
+	.infoitem { font-size: 14px; }
 
 	.nolim { width: auto; }
 
@@ -216,9 +216,9 @@ b { font-weight: 700; }
 }
 
 @media only screen and (max-width: 360px) {
-	.tbitem { font-size: 16px; }
+	.tbitem { font-size: 15px; }
 
-	#title { font-size: 20px; }
+	#title { font-size: 18px; }
 
 	#story {
 		font-size: 15px;
