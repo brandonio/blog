@@ -1,7 +1,7 @@
 :root {
-  --w: white;
-  --b: black;
-  --opac: .95;
+	--w: white;
+	--b: black;
+	--opac: .95;
 }
 
 body, html {

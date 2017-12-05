@@ -1,7 +1,13 @@
 :root {
-  --w: white;
-  --b: black;
-  --opac: .95;
+ 	--w: white;
+ 	--b: black;
+ 	--opac: .95;
+ 	--one: 1;
+ 	--two: 2;
+ 	--three: 3;
+ 	--four: 4;
+ 	--five: 5;
+ 	--six: 6;
 }
 
 body, html {
@@ -33,13 +39,11 @@ body, html {
 
 #story {
 	width: 100%;
-	max-width: 1000px;
-	padding: 80px 60px 200px;
+	max-width: 700px;
+	padding: 120px 0 200px;
 	box-sizing: border-box;
-	font-size: 22px;
 	font-family: 'Montserrat', sans-serif;
 	color: var(--w);
-	line-height: 44px;
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto; 
@@ -48,6 +52,7 @@ body, html {
 .item {
 	display: flex;
 	flex-direction: row;
+	padding-bottom: 60px;
 }
 
 .name {
@@ -81,6 +86,37 @@ b { font-weight: 700; }
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
 
+a:link {
+	color: #4885ed;
+	text-decoration: none;
+}
+
+a:visited { color: #925C92; }
+
+#uno {
+	order: var(--one);
+}
+
+#dos {
+	order: var(--two);
+}
+
+#tres {
+	order: var(--three);
+}
+
+#cuatro {
+	order: var(--four);
+}
+
+#cinco {
+	order: var(--five);
+}
+
+#seis {
+	order: var(--six);
+}
+
 /*.turnon:active, .turnoff:active, .turnon:hover, .turnoff:hover {
 	color: var(--b); stopped myself from going into tech debt lol
 }*/
@@ -90,26 +126,44 @@ b { font-weight: 700; }
 	#title { font-size: 32px; }
 
 	#story {
-		font-size: 18px;
-		line-height: 36px;
-		padding: 50px 30px 200px;
+		padding: 80px 50px 200px;
+		max-width: 550px;
 	}
 
-	.item { flex-direction: column; }
-	.value { text-align: center; }
+	.item {
+		flex-direction: column;
+		padding-bottom: 50px;
+	}
 
 	.name, .value { width: 100%; }
+
+	.name {
+		font-size: 32px;
+		padding-bottom: 9px;
+	}
+
+	.value {
+		text-align: center;
+		font-size: 18px;
+	}
 }
 
 @media only screen and (max-width: 360px) {
 	#title { font-size: 24px; }
 
 	#story {
-		font-size: 15px;
-		line-height: 30px;
-		padding: 45px 30px 200px;
+		padding: 70px 30px 200px;
+		max-width: 300px;
 	}
 
-	.name { font-size: 20px; }	
-	.value { font-size: 15px; }
+	.item { padding-bottom: 36px;}
+
+	.name {
+		font-size: 22px;
+		padding-bottom: 7px;
+	}
+
+	.value {
+		font-size: 14px;
+	}
 }
