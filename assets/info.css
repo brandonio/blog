@@ -68,7 +68,7 @@ body, html {
 	font-size: 22px;
 }
 
-#story::selection, b::selection, i::selection, br::selection, .myli::selection, .nolim::selection, .infoitem::selection, a::selection, #butt::selection/*, .imp::selection*/ {
+#story::selection, b::selection, i::selection, br::selection, .myli::selection, .nolim::selection, .infoitem::selection, a::selection, #butt::selection, .name::selection, .value::selection/*, .imp::selection*/ {
 	color: var(--b);
 	background-color: var(--w);
 }
