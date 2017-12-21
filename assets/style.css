@@ -1,7 +1,7 @@
 :root {
  	--w: white;
  	--b: black;
- 	--opac: .95;
+ 	--opac: .94;
 }
 
 body, html {
@@ -26,7 +26,7 @@ body, html {
 
 .tbitem {
 	font-family: 'PT Mono', monospace;
-	font-size: 22px;
+	font-size: 24px;
 	color: var(--b);
 }
 
@@ -159,17 +159,7 @@ b { font-weight: 700; }
 
 	#title, #shortname, #shortnum { display: inline-block; }
 
-	.nolim { width: auto; }
-
-	#prev, #next { width: 4px; }
-
-	#prev, #next, #iprev, #inext { height: 150px; }
-
-	#prev { left: 20px; }
-
-	#next { right: 20px; }
-
-	#iprev, #inext { width: 20px; }
+	.nolim { width: 100%; }
 }
 
 @media only screen and (max-width: 700px) {
@@ -177,30 +167,30 @@ b { font-weight: 700; }
 
 	.tbitem {
 		display: none;
-		font-size: 18px;
+		font-size: 16px;
 	}
 
-	#title { font-size: 24px; }
+	#title { font-size: 26px; }
 
 	#title, #shortname, #shortnum { display: inline-block; }
 
-	#prev, #next { width: 2px; }
+	#prev, #next { width: 3px; }
 
-	#prev, #next, #iprev, #inext { height: 100px; }
+	#prev, #next, #iprev, #inext { height: 150px; }
 
-	#prev { left: 10px; }
+	#prev { left: 12px; }
 
-	#next { right: 10px; }
+	#next { right: 12px; }
 	
-	#iprev, #inext { width: 10px; }
+	#iprev, #inext { width: 12px; }
 
 	#story {
-		font-size: 18px;
+		font-size: 17px;
 		line-height: 36px;
 		padding: 50px 30px 200px;
 	}
 
-	#info { padding: 15px 0 20px; }
+	#info { padding: 15px 0 10px; }
 
 	.infoitem { font-size: 14px; }
 
@@ -216,9 +206,9 @@ b { font-weight: 700; }
 }
 
 @media only screen and (max-width: 360px) {
-	.tbitem { font-size: 15px; }
+	.tbitem { font-size: 13px; }
 
-	#title { font-size: 18px; }
+	#title { font-size: 20px; }
 
 	#story {
 		font-size: 15px;
@@ -226,7 +216,7 @@ b { font-weight: 700; }
 		padding: 45px 30px 200px;
 	}
 
-	#info { padding: 15px 0 15px; }
+	#info { padding: 15px 0 10px; }
 
 	.infoitem { font-size: 12px; }
 

@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 	function off() {
 		if (!og) {
-			change("black", "white", .95, "0", false);
+			change("black", "white", .94, "0", false);
 		}
 	}
 	// jQuery Function Number 5
