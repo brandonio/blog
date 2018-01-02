@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>hi and welcome</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-	<link rel="stylesheet" href="./assets/style.css">
-	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
-	<link rel="shortcut icon" type="image/png" href="./assets/favicon.png"/>
-	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+	<title>hi & welcome</title>
+	<meta charset='utf-8'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:300,400,700' rel='stylesheet'>
+	<link rel='stylesheet' href='./assets/css/style.css'>
+	<link rel='shortcut icon' type='image/png' href='./assets/img/favicon.png'/>
 </head>
 
 <body>
-	<div id="topbar">
-		<div class='tbitem' id='shortname'><a class="homelink" href="http://brandonb.me/blog">bb</a></div>
-		<div class='tbitem'>
-			<a class="homelink" href="http://brandonb.me/blog">brand</a><div class='turnoff'>0</div><a class="homelink" href="http://brandonb.me/blog">n</a> <a class="homelink" href="http://brandonb.me/blog">b</a><div class='turnon'>1</div><a class="homelink" href="http://brandonb.me/blog">ts</a>
+	<div id='topbar'>
+		<div id='topcontent'>
+			<div class='tbitem' id='shortname'><a class='homelink' href='http://brandonb.me/blog'>bb</a></div>
+			<div class='tbitem' id='longname'><a class='homelink' href='http://brandonb.me/blog'>brand</a><div class='turnoff'>0</div><a class='homelink' href='http://brandonb.me/blog'>n</a> <a class='homelink' href='http://brandonb.me/blog'>b</a><div class='turnon'>1</div><a class='homelink' href='http://brandonb.me/blog'>ts</a></div>
+			<div class='tbitem' id='longnum'><div class='turnoff'>0</div><div id='binswitch'>b</div><div class='turnoff'>0</div><div class='turnoff'>0</div><div class='turnoff'>0</div><div class='turnoff'>0</div><div class='turnoff'>0</div><div class='turnoff'>0</div><div class='turnoff'>0</div><div class='turnoff'>0</div></div>
+			<div class='tbitem' id='shortnum'><div class='turnoff'>0</div><div id='hexswitch'>x</div><div class='turnoff'>0</div><div class='turnoff'>0</div></div>
 		</div>
-		<div class="tbitem" id="title">h<div class="turnon">1</div> and welc<div class="turnoff">0</div>me</div>
-		<div class="tbitem">&nbsp;&nbsp;&nbsp;&nbsp;<div class="turnoff">00000000</div></div>
-		<div class="tbitem" id="shortnum"><div class="turnoff">00</div></div>
+		<div class='tbitem' id='title'>h<div class='turnon'>1</div> & welc<div class='turnoff'>0</div>me</div>
 	</div>
 
-<!-- 	<a id="iprev" href="http://brandonb.me/blog"></a>
-	<a id="prev" href="http://brandonb.me/blog"></a> -->
-	
-	<div id="story">
-		<div id="info">
-			<div class="infoitem">11.20.17</div>
-			<div class="infoitem">300 words</div>
-			<div class="infoitem">1.5 min</div>
+<!-- 	<div id='egg'>
+		insert easter egg here
+	</div> -->
+
+	<div id='story'>
+		<div id='info'>
+			<div class='infoitem'>11.20.17</div>
+			<div class='infoitem'>350 words</div>
+			<div class='infoitem'>1.5m</div>
 		</div>
-		
+
 		yo. &#x1F44B;<br><br>
 
 		I'm incredibly excited to share this blog with you guys! I've been excitedly working on it for a little while now and I'm very pleased with how far it's come. Thank you to those who helped me with code, design choices, and story ideas. For the techies and anyone else interested, you can see my progress and the tools I developed to help me blog all on my <a href="https://github.com/brandonio">github</a>.<br><br>
-		
+
 		On brand0n b1ts, I'll be writing about anything blog-worthy that comes to mind. Keep in mind, this is according to <i>my</i> definition of "blog-worthy," so you might not like all of these posts. "Das foine," as my friends and I would say (to those who know me: yes, of course there will be a post about all of my weird slang). Some posts will be long, some will be short, and, some will be just one line. Many of them will be silly and random, a handful will be intellectual, and very few, if any, will be personal.<br><br>
-		
+
 		I haven't been writing <i>nearly</i> as much as I'd like to, so this is me fixing that. Don't expect short stories on here, but the possibility is always there, and I'll be sure to label any fiction as such. I have many real stories I'd like to post, though, so those will come first. Hopefully I could give people a better idea of my humor, personality, and experiences. I would love to share a little of my life with friends, family, and complete strangers all the same. In fact, I'm curious which group you see yourself in, so please fill out this <a href="https://goo.gl/forms/TuxKzRmFp8qccm3r2">one question survey</a>.<br><br>
 
 		At "worst," this blog becomes a sort of public diary to help me document myself and my life, which I've always wanted to do, anyway. I have a long list of things I want to write about, and, now that I'm mostly done with the backend stuff, I'm looking forward to starting. Let's <a href="http://brandonb.me/blog">go</a>?
 	</div>
-
-	<a id="next" href="http://brandonb.me/blog/01"></a>
-	<a id="inext" href="http://brandonb.me/blog/01"></a>
-
 </body>
 
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
-<script src="./assets/script.js"></script>
+	<a id='next' href='http://brandonb.me/blog/01'></a>
+	<a id='inext' href='http://brandonb.me/blog/01'></a>
+
+<script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+<script src='./assets/js/script.js'></script>
 
 </html>
+

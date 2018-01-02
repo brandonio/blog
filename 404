@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>brand0n b1ts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/404.css">
+    <link rel="shortcut icon" type="image/png" href="./assets/img/favicon.png"/>
+</head>
+
+<body background="./assets/404.png">
+	<div id='title'>
+		4<div class='turnoff'>0</div>4<div class='turnon'>!</div>
+	</div>
+</body>
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+<script src="./assets/js/404.js"></script>
+
+</html>

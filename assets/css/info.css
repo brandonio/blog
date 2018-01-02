@@ -120,14 +120,14 @@ a:visited { color: #925C92; }
 /*.turnon:active, .turnoff:active, .turnon:hover, .turnoff:hover {
 	color: var(--b); stopped myself from going into tech debt lol
 }*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 	#topbar { height: 40px; }
 
 	#title { font-size: 32px; }
 
 	#story {
 		padding: 80px 50px 200px;
-		max-width: 550px;
+		max-width: 450px;
 	}
 
 	.item {
@@ -138,17 +138,17 @@ a:visited { color: #925C92; }
 	.name, .value { width: 100%; }
 
 	.name {
-		font-size: 32px;
-		padding-bottom: 9px;
+		font-size: 26px;
+		padding-bottom: 3px;
 	}
 
 	.value {
 		text-align: center;
-		font-size: 18px;
+		font-size: 17px;
 	}
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 359px) {
 	#title { font-size: 24px; }
 
 	#story {
@@ -156,14 +156,14 @@ a:visited { color: #925C92; }
 		max-width: 300px;
 	}
 
-	.item { padding-bottom: 36px;}
+	.item { padding-bottom: 35px;}
 
 	.name {
-		font-size: 22px;
-		padding-bottom: 7px;
+		font-size: 17px;
+		padding-bottom: 1px;
 	}
 
 	.value {
-		font-size: 14px;
+		font-size: 12px;
 	}
 }

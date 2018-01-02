@@ -2,39 +2,43 @@
 <html>
 <head>
 	<title>snapstory series</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
-	<link rel="stylesheet" href="./assets/style.css">
-	<link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700" rel="stylesheet">
-	<link rel="shortcut icon" type="image/png" href="./assets/favicon.png"/>
+	<meta charset='utf-8'>
+	<link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat:300,400,700' rel='stylesheet'>
+	<link rel='stylesheet' href='./assets/style.css'>
+	<link rel='shortcut icon' type='image/png' href='./assets/favicon.png'/>
 </head>
 
 <body>
-	<div id="topbar">
-		<div class='tbitem' id='shortname'><a class="homelink" href="http://brandonb.me/blog">bb</a></div>
-		<div class='tbitem'>
-			<a class="homelink" href="http://brandonb.me/blog">brand</a><div class='turnoff'>0</div><a class="homelink" href="http://brandonb.me/blog">n</a> <a class="homelink" href="http://brandonb.me/blog">b</a><div class='turnon'>1</div><a class="homelink" href="http://brandonb.me/blog">ts</a>
+	<div id='topbar'>
+		<div id='topcontent'>
+			<div class='tbitem' id='shortname'><a class='homelink' href='http://brandonb.me/blog'>bb</a></div>
+			<div class='tbitem' id='longname'><a class='homelink' href='http://brandonb.me/blog'>brand</a><div class='turnoff'>0</div><a class='homelink' href='http://brandonb.me/blog'>n</a> <a class='homelink' href='http://brandonb.me/blog'>b</a><div class='turnon'>1</div><a class='homelink' href='http://brandonb.me/blog'>ts</a></div>
+			<div class='tbitem' id='longnum'><div class='turnoff'>0</div><div id='binswitch'>b</div><div class='turnoff'>0</div><div class='turnoff'>0</div><div class='turnoff'>0</div><div class='turnoff'>0</div><div class='turnoff'>0</div><div class='turnoff'>0</div><div class='turnoff'>0</div><div class='turnon'>1</div></div>
+			<div class='tbitem' id='shortnum'><div class='turnoff'>0</div><div id='hexswitch'>x</div><div class='turnoff'>0</div><div class='turnon'>1</div></div>
 		</div>
-		<div class="tbitem" id="title">snapst<div class="turnoff">0</div>ry ser<div class="turnon">1</div>es</div>
-		<div class="tbitem">&nbsp;&nbsp;&nbsp;&nbsp;<div class="turnoff">0000000</div><div class="turnon">1</div></div>
-		<div class="tbitem" id="shortnum"><div class="turnoff">0</div><div class="turnon">1</div></div>
+		<div class='tbitem' id='title'>snapst<div class='turnoff'>0</div>ry ser<div class='turnon'>1</div>es</div>
 	</div>
 
-	<a id="prev" href="http://brandonb.me/blog/00"></a>
-	<a id="iprev" href="http://brandonb.me/blog/00"></a>
-	
-	<div id="story">
-		<div id="info">
-			<div class="infoitem">11.06.17</div>
-			<div class="infoitem">500 words</div>
-			<div class="infoitem">2.5 min</div>
+<!-- 	<div id='egg'>
+		insert easter egg here
+	</div> -->
+
+	<a id='prev' href='http://brandonb.me/blog/00'></a>
+	<a id='iprev' href='http://brandonb.me/blog/00'></a>
+
+	<div id='story'>
+		<div id='info'>
+			<div class='infoitem'>11.6.17</div>
+			<div class='infoitem'>550 words</div>
+			<div class='infoitem'>3.5m</div>
 		</div>
+
 		I am a huge fan of running gags, especially ones that evolve. Naturally, I adopted many of them into my snaps. Over time, friends have too, and I now have a collection of screenshots of their snaps. Maybe one day I'll post a link to that album. For now, here's a list of my snapstory series.<br><br>
-		
+
 		<b>404 (active):</b><br>
 		This is the http error code for "not found." At 4:04, I snap a pic captioned, "Error: [ting] not found." I change [ting] every time, except for when [ting] is LA, Berkeley, or, unfortunately, sleep. I love tech, so I wanted to bring some tech jokes into my snaps.<br><br>
-		
+
 		<b>310 (active):</b><br>
 		This is the area code for the best city, the one I gladly call home, Los Angeles. When I'm back, I make sure to take a "3:10 in the 310" snap, marking my return. Funnily enough, my freshman dorm was room 310.<br><br>
 
@@ -43,14 +47,14 @@
 
 		<b>schnitzel count (seasonal):</b><br>
 		I spent most of summer '17 in Israel, so hummus and schnitzel became part of my daily diet. I kept a running count of how many schnitzels I ate with a snap of each one. I averaged ½ a schnitz' per day.<br><br>
-		
+
 		<b>#freeThePlants (seasonal):</b><br>
 		When I was in NYC during summer '17, I noticed that all the greenery was boxed in. I couldn't stand for this savagery, so I documented the caged plants, and I even freed a few.<br><br>
-		
+
 		<b>war is imminent (seasonal):</b><br>
 		UC Berkeley has a lot of protests. Some of these got out of hand, so now we have hundreds of police when a protest nears. It looks like war is imminent, hence the snaps.<br><br>
 
-		<div class="nolim"><b>friends don't let friends go to sleep without brushing their teeth (rare):</b></div><br>
+		<b><div class="nolim">friends don't let friends go to sleep without brushing their teeth (rare):</div></b><br>
 		FDLFGTSWBTT stems from my passion for dental hygiene. I wake up friends to brush their teeth if they didn't already brush.<br><br>
 
 		<b>6IX (rare):</b><br>
@@ -58,20 +62,20 @@
 
 		<b>walk home with me (rare):</b><br>
 		Berkeley isn't the safest city, as you may know, so I like to take snaps of myself walking home late at night, playing music and letting my friends know how terrified I am. I don't put these on my story because I don't want family members freaking out.<br><br>
-		
+
 		<b>Thomas, go to sleep! (retired):</b><br>
 		Thomas is often awake at ungodly hours. I used to snap me singing, "Thomas, go to sleep!" and zooming in and out of his face so he'd sleep. It's beyond me why this wasn't effective.<br><br>
-		
-		<b>"Feedback" - Kanye (retired):</b>
+
+		<b>"Feedback" - Kanye (retired):</b><br>
 		Thomas is often <i>asleep</i> at ungodly hours, as well. I used to blast "Feedback" by Kanye and zoom into him waking up. This, too, failed to fix his sleeping habits.
 	</div>
-
-	<a id="next" href="http://brandonb.me/blog/10"></a>
-	<a id="inext" href="http://brandonb.me/blog/10"></a>
-
 </body>
 
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
-<script src="./assets/script.js"></script>
+	<a id='next' href='http://brandonb.me/blog/10'></a>
+	<a id='inext' href='http://brandonb.me/blog/10'></a>
+
+<script src='http://code.jquery.com/jquery-1.11.3.min.js'></script>
+<script src='./assets/script.js'></script>
 
 </html>
+
