@@ -179,7 +179,7 @@ pre { display: inline-block; }
 }
 
 @media only screen and (max-width: 700px) {
-	#topbar { height: 40px; }
+	#topbar { height: 50px; }
 
 	.tbitem {
 		display: none;
