@@ -184,7 +184,7 @@ pre { display: inline-block; }
 	#title { font-size: 26px; }
 
 	#prev, #next { width: 4px; }
-	#prev, #next, #iprev, #inext { height: 250px; }
+	#prev, #next, #iprev, #inext { height: 200px; }
 	#prev { left: 9px; }
 	#next { right: 9px; }
 	#iprev, #inext { width: 9px; }
