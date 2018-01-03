@@ -176,8 +176,8 @@ pre { display: inline-block; }
 	.nolim { width: 100%; }
 
 	#binswitch, #hexswitch { cursor: default; }
-}
 
+}
 @media only screen and (max-width: 700px) {
 	#topbar { height: 40px; }
 
@@ -222,57 +222,5 @@ pre { display: inline-block; }
 		transform: scale(.666);
 		margin-left: -55px; /* needed b/c of scaling */
 		width: 360px; /* 240px irl */
-	}
-}
-
-@media only screen and (max-width: 550px) {
-	.tbitem { font-size: 14px; }
-
-	#topcontent { padding: 0 7px; }
-
-	#title { font-size: 22px; }
-
-	#story {
-		font-size: 18px;
-		line-height: 36px;
-	}
-
-	.infoitem { font-size: 13px; }
-}
-
-
-@media only screen and (max-width: 359px) {
-	.tbitem { font-size: 12px; }
-
-	#topcontent { padding: 0 6px; }
-
-	#title { font-size: 20px; }
-
-	#prev, #next { width: 3px; }
-
-	#prev, #next, #iprev, #inext { height: 200px; }
-
-	#prev { left: 8px; }
-
-	#next { right: 8px; }
-	
-	#iprev, #inext { width: 8px; }
-
-	#story {
-		font-size: 15px;
-		line-height: 30px;
-		padding: 45px 30px 200px;
-	}
-
-	#info { padding: 15px 0 8px; }
-
-	.infoitem { font-size: 12px; }
-
-	#egg {
-		margin-top: 35px;
-		font-size: 12px;  8px irl 
-		transform: scale(.666);
-		margin-left: -58px;  needed b/c of scaling 
-		width: 350px;  233px irl 
 	}
 }
