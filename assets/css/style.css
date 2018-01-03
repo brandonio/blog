@@ -192,7 +192,7 @@ pre { display: inline-block; }
 	#story {
 		font-size: 18px;
 		line-height: 36px;
-		padding: 50px 30px;
+		padding: 50px 30px 200px 30px;
 	}
 
 	.infoitem { font-size: 15px; }
