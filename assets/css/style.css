@@ -179,7 +179,7 @@ pre { display: inline-block; }
 
 }
 @media only screen and (max-width: 700px) {
-	/*#topbar { height: 40px; }*/
+	#topbar { height: 50px; }
 
 	.tbitem {
 		display: none;
@@ -205,9 +205,9 @@ pre { display: inline-block; }
 	#iprev, #inext { width: 9px; }
 
 	#story {
-		font-size: 20px;
-		line-height: 40px;
-		padding: 50px 40px;
+		font-size: 17px;
+		line-height: 34px;
+		padding: 50px 20px;
 	}
 
 	/*#info { padding: 15px 0 10px; }*/

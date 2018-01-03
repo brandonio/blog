@@ -121,7 +121,7 @@ a:visited { color: #925C92; }
 	color: var(--b); stopped myself from going into tech debt lol
 }*/
 @media only screen and (max-width: 1000px) {
-	#topbar { height: 40px; }
+	#topbar { height: 50px; }
 
 	#title { font-size: 32px; }
 
@@ -149,6 +149,8 @@ a:visited { color: #925C92; }
 }
 
 @media only screen and (max-width: 359px) {
+	#topbar { height: 40px; }
+
 	#title { font-size: 24px; }
 
 	#story {
