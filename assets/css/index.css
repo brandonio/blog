@@ -27,7 +27,7 @@ body, html {
 	font-family: 'PT Mono', monospace;
 	color: var(--b);
 	font-weight: 600;
-	font-size: 40px;
+	font-size: 36px;
 }
 
 #blogs {
@@ -144,7 +144,7 @@ a:visited, a:link {
 @media only screen and (max-width: 500px) and (min-width: 359px) {
 	#topbar { height: 50px; }
 
-	#title { font-size: 32px; }
+	#title { font-size: 28px; }
 
 	#blogs { padding: 85px 30px 200px 30px; }
 
@@ -182,7 +182,7 @@ a:visited, a:link {
 @media only screen and (max-width: 359px) {
 	#topbar { height: 40px; }
 
-	#title { font-size: 26px; }
+	#title { font-size: 24px; }
 
 	#blogs { padding: 75px 30px 200px 30px; }
 
