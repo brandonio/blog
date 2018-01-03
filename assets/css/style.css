@@ -178,7 +178,7 @@ pre { display: inline-block; }
 }
 
 @media only screen and (max-width: 700px) {
-	#topbar { height: 80px; }
+	#topbar { height: 50px; }
 	.tbitem { font-size: 16px; }
 	#topcontent { padding: 0 8px; }
 	#title { font-size: 26px; }
