@@ -181,7 +181,7 @@ pre { display: inline-block; }
 	#topbar { height: 50px; }
 	.tbitem { font-size: 16px; }
 	#topcontent { padding: 0 8px; }
-	#title { font-size: 26px; }
+	#title { font-size: 24px; }
 
 	#prev, #next { width: 4px; }
 	#prev, #next, #iprev, #inext { height: 200px; }
@@ -190,8 +190,8 @@ pre { display: inline-block; }
 	#iprev, #inext { width: 9px; }
 
 	#story {
-		font-size: 18px;
-		line-height: 36px;
+		font-size: 17px;
+		line-height: 34px;
 		padding: 50px 30px 200px 30px;
 	}
 
