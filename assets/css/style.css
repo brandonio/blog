@@ -84,7 +84,7 @@ body, html {
 #story {
 	width: 100%;
 	max-width: 850px;
-	padding: 80px 60px 200px;
+	padding: 80px 60px 200px 60px;
 	box-sizing: border-box;
 	margin: 0 auto;
 	font-size: 22px;
@@ -184,7 +184,7 @@ pre { display: inline-block; }
 	#title { font-size: 23px; }
 
 	#prev, #next { width: 4px; }
-	#prev, #next, #iprev, #inext { height: 200px; }
+	#prev, #next, #iprev, #inext { height: 250px; }
 	#prev { left: 17px; }
 	#next { right: 17px; }
 	#iprev, #inext { width: 17px; }
@@ -236,7 +236,7 @@ pre { display: inline-block; }
 	#story {
 		font-size: 15px;
 		line-height: 30px;
-		padding: 45px 30px 200px;
+		padding: 45px 30px 200px 30px;
 	}
 
 	#info { padding: 15px 0 8px; }
