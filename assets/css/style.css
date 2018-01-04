@@ -192,7 +192,7 @@ pre { display: inline-block; }
 	#story {
 		font-size: 20px;
 		line-height: 40px;
-		padding: 50px 50px 200px 50px;
+		padding: 55px 50px 200px 50px;
 	}
 
 	.infoitem { font-size: 15px; }
@@ -208,19 +208,19 @@ pre { display: inline-block; }
 }
 
 
-@media only screen and (max-width: 450px) {
+@media only screen and (max-width: 500px) {
 	#story {
 		font-size: 16px;
 		line-height: 32px;
-		padding: 50px 35px 200px 35px;
+		padding: 50px 15px 200px 15px;
 	}
 	
-	#prev { left: 13px; }
-	#next { right: 13px; }
-	#iprev, #inext { width: 13px; }
+	#prev { left: 0; }
+	#next { right: 0; }
+	#iprev, #inext { display: none; }
 
 	.infoitem { font-size: 14px; }
-	#info { padding-bottom: 14px; }
+	#info { padding-bottom: 17px; }
 }
 
 @media only screen and (max-width: 359px) {
@@ -231,10 +231,7 @@ pre { display: inline-block; }
 	#title { font-size: 20px; }
 
 	#prev, #next { width: 3px; }
-	#prev, #next, #iprev, #inext { height: 200px; }
-	#prev { left: 8px; }
-	#next { right: 8px; }
-	#iprev, #inext { width: 8px; }
+	#prev, #next { height: 200px; }
 
 	#story {
 		font-size: 15px;
