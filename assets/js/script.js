@@ -10,7 +10,6 @@ $(document).ready(function() {
 		html.style.setProperty("--b", a);
 		html.style.setProperty("--w", b);
 		html.style.setProperty("--opac", o);
-		// $.each($(".turnoff"), function() { $(this).html(ch.repeat($(this).html().length)) });
 		if (ind || huevo) {
 			if (!mob && ind) { $.each($(".ze"), function() { $(this).html(ch.repeat($(this).html().length)) }); }
 			if (e) { $("#egg").show(); }

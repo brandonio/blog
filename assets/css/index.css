@@ -43,31 +43,20 @@ body, html {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	margin: 0 0 55px 0;
+	margin-bottom: 55px;
+	cursor: pointer;
 }
-
-.sbi { margin: 0 0 52px 0; }
 
 .num, .name { text-align: center; }
 
 .num {
 	font-family: 'PT Mono', monospace;
 	font-size: 40px;
-	padding-bottom: 30px;
 }
 
 .name {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 30px;
-	position: absolute;
-	padding-top: 40px;
-	z-index: 2;
-	order: -1;
-}
-
-.snum {
-	z-index: 3;
-	padding-bottom: 33px;
 }
 
 #egg {
@@ -95,27 +84,17 @@ a:visited, a:link {
 	text-decoration: none;
 }
 
-.amarillo .name:hover + .num { color: #f4c20d; } 
-.amarillo .name:hover { color: #f4c20d; }
+.amarillo:hover .num { color: #f4c20d; }
+.amarillo:hover .name { color: #f4c20d; }
 
-.azul .name:hover + .num { color: #4885ed; } 
-.azul .name:hover { color: #4885ed; }
+.azul:hover .num { color: #4885ed; } 
+.azul:hover .name { color: #4885ed; }
 
-.rojo .name:hover + .num { color: #db3236; } 
-.rojo .name:hover { color: #db3236; }
+.rojo:hover .num { color: #db3236; } 
+.rojo:hover .name { color: #db3236; }
 
-.verde .name:hover + .num { color: #3cba54; } 
-.verde .name:hover { color: #3cba54; }
-
-/* if title is shorter than blog number*/
-.amarillo .snum:hover + .name { color: #f4c20d; }
-.azul .snum:hover + .name { color: #4885ed; }
-.rojo .snum:hover + .name { color: #db3236; }
-.verde .snum:hover + .name { color: #3cba54; }
-.amarillo .snum:hover { color: #f4c20d; }
-.azul .snum:hover { color: #4885ed; }
-.rojo .snum:hover { color: #db3236; }
-.verde .snum:hover { color: #3cba54; }
+.verde:hover .num { color: #3cba54; } 
+.verde:hover .name { color: #3cba54; }
 
 .ze { display: inline-block; }
 
@@ -148,21 +127,11 @@ a:visited, a:link {
 
 	#blogs { padding: 95px 30px 200px 30px; }
 
-	.blogitem { margin: 0 0 45px 0; }
+	.blogitem { margin-bottom: 45px; }
 
-	.sbi { margin: 0 0 36px 0; }
+	.num { font-size: 30px; }
 
-	.num {
-		font-size: 30px;
-		padding-bottom: 21px;
-	}
-
-	.snum { padding-bottom: 25px; }
-
-	.name {
-		font-size: 24px;
-		padding-top: 28px;
-	}
+	.name { font-size: 24px; }
 
 	#egg {
 		margin-top: 45px;
@@ -186,21 +155,11 @@ a:visited, a:link {
 
 	#blogs { padding: 75px 30px 200px 30px; }
 
-	.blogitem { margin: 0 0 30px 0; }
+	.blogitem { margin-bottom: 30px; }
 
-	.sbi { margin: 0 0 29px 0; }
+	.num { font-size: 24px; }
 
-	.num {
-		font-size: 24px;
-		padding-bottom: 18px;
-	}
-
-	.snum { padding-bottom: 20px; }
-
-	.name {
-		font-size: 18px;
-		padding-top: 24px;
-	}
+	.name { font-size: 18px; }
 
 	#egg {
 		margin-top: 35px;
