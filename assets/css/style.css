@@ -185,25 +185,39 @@ pre { display: inline-block; }
 
 	#prev, #next { width: 4px; }
 	#prev, #next, #iprev, #inext { height: 200px; }
-	#prev { left: 9px; }
-	#next { right: 9px; }
-	#iprev, #inext { width: 9px; }
+	#prev { left: 17px; }
+	#next { right: 17px; }
+	#iprev, #inext { width: 17px; }
 
 	#story {
-		font-size: 17px;
-		line-height: 34px;
-		padding: 50px 30px 200px 30px;
+		font-size: 20px;
+		line-height: 40px;
+		padding: 50px 50px 200px 50px;
 	}
 
 	.infoitem { font-size: 15px; }
+	#info { padding-bottom: 15px; }
 
 	#egg {
-		margin-top: 37px;
+		margin-top: 47px;
 		font-size: 12px; /* 8px irl */
 		transform: scale(.666);
-		margin-left: -55px; /* needed b/c of scaling */
+		margin-left: -60px; /* needed b/c of scaling */
 		width: 360px; /* 240px irl */
 	}
+}
+
+
+@media only screen and (max-width: 550px) {
+	#story {
+		font-size: 17px;
+		line-height: 34px;
+		padding: 50px 35px 200px 35px;
+	}
+	
+	#prev { left: 13px; }
+	#next { right: 13px; }
+	#iprev, #inext { width: 13px; }
 }
 
 
@@ -255,6 +269,6 @@ pre { display: inline-block; }
 		font-size: 12px;  8px irl 
 		transform: scale(.666);
 		margin-left: -58px;  needed b/c of scaling 
-		width: 350px;  233px irl 
+		width: 350px;  233px irl
 	}
-}*/
+}

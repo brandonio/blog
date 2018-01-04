@@ -40,7 +40,7 @@ body, html {
 #story {
 	width: 100%;
 	max-width: 700px;
-	padding: 120px 0 200px;
+	padding: 130px 0 200px;
 	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
 	color: var(--w);
@@ -126,7 +126,7 @@ a:visited { color: #925C92; }
 	#title { font-size: 32px; }
 
 	#story {
-		padding: 80px 50px 200px;
+		padding: 100px 50px 200px;
 		max-width: 450px;
 	}
 
@@ -154,7 +154,7 @@ a:visited { color: #925C92; }
 	#title { font-size: 24px; }
 
 	#story {
-		padding: 70px 30px 200px;
+		padding: 75px 30px 200px;
 		max-width: 300px;
 	}
 
