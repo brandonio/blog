@@ -141,10 +141,10 @@ a:visited, a:link {
 }
 
 
-@media only screen and (max-width: 500px) and (min-width: 359px) {
+@media only screen and (max-width: 500px) {
 	#topbar { height: 50px; }
 
-	#title { font-size: 40px; }
+	#title { font-size: 35px; }
 
 	#blogs { padding: 85px 30px 200px 30px; }
 

@@ -22,7 +22,7 @@ body, html {
 	height: 60px;
 	background: var(--w);
 	position: fixed;
-	z-index: 4;
+	z-index: 2;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -47,6 +47,7 @@ body, html {
 	display: flex;
 	flex-direction: column;
 	margin: 0 auto; 
+	justify-content: center;
 }
 
 .item {
@@ -57,15 +58,17 @@ body, html {
 
 .name {
 	width: 50%;
+	/*width: 35%;*/
+	/*padding-left: 15%;*/
 	font-size: 38px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	text-align: right;
+	padding-right: 20px;
 }
 
 .value {
 	width: 50%;
 	font-size: 22px;
+	padding-left: 20px;
 }
 
 #story::selection, b::selection, i::selection, br::selection, .myli::selection, .nolim::selection, .infoitem::selection, a::selection, #butt::selection, .name::selection, .value::selection/*, .imp::selection*/ {
@@ -93,42 +96,37 @@ a:link {
 
 a:visited { color: #925C92; }
 
-#uno {
-	order: var(--one);
-}
+#uno { order: var(--one); }
+#dos { order: var(--two); }
+#tres { order: var(--three); }
+#cuatro { order: var(--four); }
+#cinco { order: var(--five); }
+#seis { order: var(--six); }
 
-#dos {
-	order: var(--two);
-}
+@media only screen and (max-width: 900px) {
+	#title { font-size: 40px; }
+	
+	#story { padding: 120px 55px 200px; }
 
-#tres {
-	order: var(--three);
-}
+	.name {
+		font-size: 30px;
+		padding-bottom: 4px;
+	}
 
-#cuatro {
-	order: var(--four);
-}
+	.value {
+		font-size: 20px;
+	}
 
-#cinco {
-	order: var(--five);
-}
 
-#seis {
-	order: var(--six);
-}
-
-/*.turnon:active, .turnoff:active, .turnon:hover, .turnoff:hover {
-	color: var(--b); stopped myself from going into tech debt lol
-}*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 700px) {
 	#topbar { height: 50px; }
 
 	#title { font-size: 32px; }
 
 	#story {
 		padding: 100px 50px 200px;
-		max-width: 450px;
-	}
+		max-width: 500px;
+}
 
 	.item {
 		flex-direction: column;
@@ -140,11 +138,14 @@ a:visited { color: #925C92; }
 	.name {
 		font-size: 26px;
 		padding-bottom: 3px;
+		text-align: left;
+		padding-right: 0;
 	}
 
 	.value {
-		text-align: center;
+		text-align: left;
 		font-size: 17px;
+		padding-left: 0;
 	}
 }
 
@@ -154,7 +155,7 @@ a:visited { color: #925C92; }
 	#title { font-size: 24px; }
 
 	#story {
-		padding: 75px 30px 200px;
+		padding: 80px 30px 200px;
 		max-width: 300px;
 	}
 
@@ -165,7 +166,6 @@ a:visited { color: #925C92; }
 		padding-bottom: 1px;
 	}
 
-	.value {
-		font-size: 12px;
-	}
+	.value { font-size: 12px; }
 }
+/**/
