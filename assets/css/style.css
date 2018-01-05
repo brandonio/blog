@@ -215,9 +215,9 @@ pre { display: inline-block; }
 		padding: 50px 20px 200px 20px;
 	}
 	
-	#prev { left: 1px; }
-	#next { right: 1px; }
-	#iprev, #inext { width: 1px; }
+	#prev { left: 3px; }
+	#next { right: 3px; }
+	#iprev, #inext { width: 3px; }
 
 	.infoitem { font-size: 14px; }
 	#info { padding-bottom: 17px; }
