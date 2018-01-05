@@ -153,9 +153,9 @@ a:visited, a:link {
 @media only screen and (max-width: 359px) {
 	#topbar { height: 40px; }
 
-	#title { font-size: 32px; }
+	#title { font-size: 30px; }
 
-	#blogs { padding: 75px 30px 200px 30px; }
+	#blogs { padding: 70px 30px 200px 30px; }
 
 	.blogitem { margin-bottom: 30px; }
 
