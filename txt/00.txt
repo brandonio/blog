@@ -1,15 +1,15 @@
 0
 hi & welcome
 b
-11.20.17
-x
+01.07.18
+yups
 
 yo. &#x1F44B;
 
-I'm incredibly excited to share this blog with you guys! I've been excitedly working on it for a little while now and I'm very pleased with how far it's come. Thank you to those who helped me with code, design choices, and story ideas. For the techies and anyone else interested, you can see my progress and the tools I developed to help me blog all on my <a href="https://github.com/brandonio">github</a>.
+My name is Brandon Berookhim and I'm incredibly excited to share my blog with you! I've been working on it for a little while now and I'm very pleased with how far it's come. Thank you to those who helped me with code, design choices, and story ideas. For the techies and anyone else interested, you can see my progress and the tools I developed to help me blog on my <a href="https://github.com/brandonio">github</a>.
 
-On brand0n b1ts, I'll be writing about anything blog-worthy that comes to mind. Keep in mind, this is according to <i>my</i> definition of "blog-worthy," so you might not like all of these posts. "Das foine," as my friends and I would say (to those who know me: yes, of course there will be a post about all of my weird slang). Some posts will be long, some will be short, and, some will be just one line. Many of them will be silly and random, a handful will be intellectual, and very few, if any, will be personal.
+On brand0n b1ts, I'll be writing about anything I think would make for a fun read. Some stories will be long, some will be short, and some will be just one line. Many will be silly and a handful will be intellectual. At "worst," this blog becomes great web dev practice. Ideally, this serves as a sort of public journal to help me document parts of my life.
 
-I haven't been writing <i>nearly</i> as much as I'd like to, so this is me fixing that. Don't expect short stories on here, but the possibility is always there, and I'll be sure to label any fiction as such. I have many real stories I'd like to post, though, so those will come first. Hopefully I could give people a better idea of my humor, personality, and experiences. I would love to share a little of my life with friends, family, and complete strangers all the same. In fact, I'm curious which group you see yourself in, so please fill out this <a href="https://goo.gl/forms/TuxKzRmFp8qccm3r2">one question survey</a>.
+I haven't been writing <i>nearly</i> as much as I'd like to, so this is me fixing that. Hopefully I could give people a better idea of my personality and experiences in the process. I would love to share some of my life with friends, family, and even complete strangers. In fact, I'm curious which group you see yourself in, so please fill out this one-question <a href="https://goo.gl/forms/TuxKzRmFp8qccm3r2">survey</a>.
 
-At "worst," this blog becomes a sort of public diary to help me document myself and my life, which I've always wanted to do, anyway. I have a long list of things I want to write about, and, now that I'm mostly done with the backend stuff, I'm looking forward to starting. Let's <a href="http://brandonb.me/blog">go</a>?
+Now that I'm done with the backend stuff, I can start checking things off my list of ideas to write about. I've already started you off with a few stories and several easter eggs to look out for. The bars on the side will help you navigate through each post and the text in the top left will take you back to the main page. Let's <a href="http://brandonb.me/blog">go</a>?
