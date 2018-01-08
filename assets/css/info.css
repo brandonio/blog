@@ -29,12 +29,28 @@ body, html {
 	opacity: var(--opac);
 }
 
+#topcontent {
+	width: 100%;
+	padding: 0 13px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.tbitem {
+	font-family: 'PT Mono', monospace;
+	font-size: 26px;
+	color: var(--b);
+}
+
+#shortname { display: none; }
+
 #title {
 	font-family: 'PT Mono', monospace;
 	font-size: 50px;
 	color: var(--b);
 	font-weight: 600;
 	font-size: 45px;
+	position: absolute;
 }
 
 #story {
@@ -66,6 +82,10 @@ body, html {
 	width: 50%;
 	font-size: 22px;
 	padding-left: 20px;
+}
+
+.homelink:link, .homelink:visited, .homelink:hover, .homelink:active {
+	color: var(--b);
 }
 
 #story::selection, b::selection, i::selection, br::selection, .myli::selection, .nolim::selection, .infoitem::selection, a::selection, #butt::selection, .name::selection, .value::selection/*, .imp::selection*/ {
@@ -102,7 +122,8 @@ a:visited { color: #925C92; }
 
 @media only screen and (max-width: 900px) {
 	#title { font-size: 40px; }
-	
+	#longname { font-size: 24px; }
+	#topcontent { padding: 0 12px; }
 	#story { padding: 120px 55px 200px 55px; }
 
 	.name {
@@ -110,20 +131,22 @@ a:visited { color: #925C92; }
 		padding-bottom: 4px;
 	}
 
-	.value {
-		font-size: 20px;
-	}
+	.value { font-size: 20px; }
+}
 
 
 @media only screen and (max-width: 700px) {
 	#topbar { height: 50px; }
-
+	#longname { display: none; }
+	#shortname { display: inline-block; }
+	.tbitem { font-size: 20px; }
+	#topcontent { padding: 0 10px; }
 	#title { font-size: 32px; }
 
 	#story {
 		padding: 100px 50px 200px 50px;
 		max-width: 500px;
-}
+	}
 
 	.item {
 		flex-direction: column;
@@ -148,7 +171,8 @@ a:visited { color: #925C92; }
 
 @media only screen and (max-width: 359px) {
 	#topbar { height: 40px; }
-
+	.tbitem { font-size: 12px; }
+	#topcontent { padding: 0 6px; }
 	#title { font-size: 24px; }
 
 	#story {
@@ -165,4 +189,3 @@ a:visited { color: #925C92; }
 
 	.value { font-size: 12px; }
 }
-/**/

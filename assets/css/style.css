@@ -165,10 +165,6 @@ b { font-weight: 700; }
 
 pre { display: inline-block; }
 
-.showshort { display: inline-block !important; }
-
-.hidelong { display: none !important; }
-
 @media only screen and (max-width: 1000px) {
 	.tbitem { display: none; }
 	#title, #shortname, #shortnum { display: inline-block; }
@@ -212,14 +208,14 @@ pre { display: inline-block; }
 	#story {
 		font-size: 16px;
 		line-height: 32px;
-		padding: 50px 20px 200px 20px;
+		padding: 50px 15px 200px 15px;
 	}
 	
 	#prev { left: 3px; }
 	#next { right: 3px; }
 	#iprev, #inext { width: 3px; }
 
-	.infoitem { font-size: 14px; }
+	.infoitem { font-size: 15px; }
 	#info { padding-bottom: 17px; }
 }
 

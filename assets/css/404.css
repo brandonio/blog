@@ -38,3 +38,50 @@ body {
 	cursor: pointer;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 }
+
+#prev, #next, #iprev, #inext {
+	position: fixed;
+	top: 50%;
+	margin-top: 30px;
+	transform: translateY(-50%);
+	height: 300px;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+#prev, #next {
+	background: var(--w);
+	width: 5px;
+}
+
+#prev { left: 20px; }
+
+#iprev { left: 0; }
+
+#next { right: 20px; }
+
+#inext { right: 0; }
+
+#iprev, #inext {
+	background: var(--b);
+	width: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+	#prev, #next { width: 4px; }
+	#prev, #next, #iprev, #inext { height: 250px; }
+	#prev { left: 17px; }
+	#next { right: 17px; }
+	#iprev, #inext { width: 17px; }
+}
+
+@media only screen and (max-width: 500px) {
+	#prev { left: 3px; }
+	#next { right: 3px; }
+	#iprev, #inext { width: 3px; }
+}
+
+@media only screen and (max-width: 359px) {
+	#prev, #next { width: 3px; }
+	#prev, #next { height: 175px; }
+}
