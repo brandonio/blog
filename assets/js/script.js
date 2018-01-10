@@ -1,7 +1,6 @@
 $(document).ready(function() {
 	const html = document.getElementsByTagName('html')[0];
 	const ind = $('.ze').length > 0;
-	const huevo = $("#egg").length > 0;
 	const mob = isMobile();
 
 	let og = true;
@@ -10,10 +9,9 @@ $(document).ready(function() {
 		html.style.setProperty("--b", a);
 		html.style.setProperty("--w", b);
 		html.style.setProperty("--opac", o);
-		if (ind || huevo) {
-			if (!mob && ind) { $.each($(".ze"), function() { $(this).html(ch.repeat($(this).html().length)) }); }
-			if (e) { $("#egg").show(); }
-			else { $("#egg").hide(); }
+		if (!mob) {
+			if (ind) { $.each($(".ze"), function() { $(this).html(ch.repeat($(this).html().length)) }); }
+			$.each($(".turnoff"), function() { $(this).html(ch.repeat($(this).html().length)) });
 		}
 		og = !og;
 	}
@@ -34,8 +32,8 @@ $(document).ready(function() {
 	} else {
 		$(".turnoff").hover(off);
 		$(".turnon").hover(on);
-		$("#hexswitch").hover(showBin);
 		$("#binswitch").hover(showHex);
+		$("#hexswitch").hover(showBin);
 	}
 
 	function showHex() {
