@@ -4,20 +4,19 @@ $(document).ready(function() {
 
 	let og = true;
 
-	function change(a, b, o, ch, e) {
+	function change(a, b, o, ch) {
 		html.style.setProperty("--b", a);
 		html.style.setProperty("--w", b);
 		html.style.setProperty("--opac", o);
-		
-		if (!mob) { $.each($(".ze"), function() { $(this).html(ch.repeat($(this).html().length)) }); }
-		if (e) { $("#egg").show(); }
-		else { $("#egg").hide(); }
-
+		if (!mob) {
+			$.each($(".ze"), function() { $(this).html(ch.repeat($(this).html().length)) });
+			$.each($(".turnoff"), function() { $(this).html(ch.repeat($(this).html().length)) });
+		}
 		og = !og;
 	}
 
-	function on() { if (og) { change("white", "black", .87, "O", true); }}
-	function off() { if (!og) { change("black", "white", .94, "0", false); }}
+	function on() { if (og) { change("white", "black", .88, "O"); }}
+	function off() { if (!og) { change("black", "white", .95, "0"); }}
 
 	function isMobile() {
   		try{ document.createEvent("TouchEvent"); return true; }
