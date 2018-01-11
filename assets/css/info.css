@@ -120,7 +120,7 @@ a:visited { color: #925C92; }
 #cinco { order: var(--five); }
 #seis { order: var(--six); }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
 	#title { font-size: 40px; }
 	#longname { font-size: 24px; }
 	#topcontent { padding: 0 12px; }

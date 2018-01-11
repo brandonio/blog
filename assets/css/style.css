@@ -100,7 +100,7 @@ body, html {
 }
 
 .infoitem {
-	font-size: 17px;
+	font-size: 18px;
 	font-family: 'Montserrat', sans-serif;
 	color: var(--w);
 	font-weight: 300;
@@ -184,7 +184,7 @@ pre {
 	#topbar { height: 50px; }
 	.tbitem { font-size: 16px; }
 	#topcontent { padding: 0 8px; }
-	#title { font-size: 23px; }
+	#title { font-size: 24px; }
 
 	#prev, #next { width: 4px; }
 	#prev, #next, #iprev, #inext { height: 250px; }
@@ -193,7 +193,8 @@ pre {
 	#iprev, #inext { width: 17px; }
 
 	#story {
-		font-size: 20px;
+		max-width: 600px;
+		font-size: 18px;
 		padding: 55px 50px 200px 50px;
 	}
 
@@ -214,13 +215,11 @@ pre {
 		font-size: 16px;
 		padding: 50px 15px 200px 15px;
 	}
-	
+
+	#prev, #next { width: 3px; }
 	#prev { left: 3px; }
 	#next { right: 3px; }
 	#iprev, #inext { width: 3px; }
-
-	.infoitem { font-size: 15px; }
-	#info { padding-bottom: 17px; }
 }
 
 @media only screen and (max-width: 359px) {
@@ -245,9 +244,9 @@ pre {
 
 	#egg {
 		margin-top: 35px;
-		font-size: 12px;  8px irl 
+		font-size: 12px;  /* 8px irl */
 		transform: scale(.666);
-		margin-left: -58px;  needed b/c of scaling 
-		width: 350px;  233px irl
+		margin-left: -58px;  /* needed b/c of scaling */
+		width: 350px;  /* 233px irl */
 	}
 }
