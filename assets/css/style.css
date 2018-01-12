@@ -173,7 +173,7 @@ pre {
 
 @media only screen and (max-width: 1000px) {
 	.tbitem { display: none; }
-	#title, #shortname, #shortnum { display: inline-block; }
+	#title, #shortname, #shortnum { display: inline-block !important; }
 	
 	.nolim { width: 100%; }
 
