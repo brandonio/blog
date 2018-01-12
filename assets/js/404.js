@@ -2,14 +2,16 @@ $(document).ready(function() {
 	const html = document.getElementsByTagName('html')[0];
 	const mob = isMobile();
 
-	function change(a, b, c) {
+	function change(a, b, c, d) {
 		html.style.setProperty("--b", a);
 		html.style.setProperty("--w", b);
 		html.style.setProperty("--opac", c);
+		if (d) { $(".bar").css("display", "inline-block"); }
+		else { $(".bar").css("display", "none"); }
 	}
 
-	function on() { change("white", "black", 0); }
-	function off() { change("black", "white", 1); }
+	function on() { change("white", "black", 0, false); }
+	function off() { change("black", "white", 1, true); }
 
 	function isMobile() {
 		var check = false;
