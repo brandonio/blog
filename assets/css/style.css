@@ -17,15 +17,20 @@ body, html {
 	background: var(--w);
 	position: fixed;
 	z-index: 2;
-	display: flex;
+	display: -webkit-flex;
+    -webkit-align-items: center;
+    -webkit-justify-content: center;
+    display: flex;
+    align-items: center;
 	justify-content: center;
-	align-items: center;
 	opacity: var(--opac);
 }
 
 #topcontent {
 	width: 100%;
 	padding: 0 13px;
+	display: -webkit-flex;
+	-webkit-justify-content: space-between;
 	display: flex;
 	justify-content: space-between;
 }
@@ -95,6 +100,8 @@ body, html {
 
 #info {
 	padding: 30px 0;
+	display: -webkit-flex;
+	-webkit-justify-content: space-around;
 	display: flex;
 	justify-content: space-around;
 }
